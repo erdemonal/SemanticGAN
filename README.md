@@ -41,6 +41,6 @@ This work builds upon KBGAN (Cai & Wang, 2018) for adversarial negative sampling
 
 ## Data Availability
 
-The DBLP dataset is publicly available from [dblp.uni-trier.de/xml/](https://dblp.uni-trier.de/xml/). Documentation is available at [DBLP — Some Lessons Learned](https://dblp.org/rec/conf/vldb/Ley09.html). Place the `dblp.xml` file in `data/real/` before running preprocessing.
+The DBLP dataset is publicly available from [dblp.uni-trier.de/xml/](https://dblp.uni-trier.de/xml/). Documentation is available at [DBLP — Some Lessons Learned](https://dblp.org/xml/docu/dblpxml.pdf). Place the `dblp.xml` file in `data/real/` before running preprocessing.
 
 **Note**: The continuous learning pipeline is active and updates the model daily via automated workflows.
