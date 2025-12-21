@@ -15,12 +15,12 @@ A detailed description of the model, training procedure, and evaluation is provi
 
 The LaTeX source is available in [`paper/main.tex`](paper/main.tex).
 
-## Live Dashboard
+## Training Dashboard
 
-Live metrics are available at  
-https://erdemonal11.github.io/schema-guided-rdf-generation
+Metrics are available at  
+https://erdemonal11.github.io/SemanticGAN
 
-The dashboard reports novelty and diversity metrics for generated triples, example RDF outputs with confidence scores, and training loss curves over time.
+The dashboard is used to monitor training progress and inspect generated RDF triples.
 
 ## Methodology
 
