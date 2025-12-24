@@ -1,411 +1,411 @@
 {
-  "last_updated": "2025-12-24 13:17 UTC",
+  "last_updated": "2025-12-24 21:50 UTC",
   "training_status": {
-    "epoch": 2,
-    "d_loss": -0.0067,
-    "g_loss": 0.0163
+    "epoch": 1,
+    "d_loss": -0.0071,
+    "g_loss": -0.0022
   },
   "stats": {
     "novelty": 100.0,
     "train_overlap": 0.0,
-    "uniqueness": 100.0,
+    "uniqueness": 99.9,
     "relation_diversity": 100.0,
-    "avg_distance": 0.3496,
+    "avg_distance": 0.4738,
     "schema_validity": 0.0,
     "total_generated": 1000,
-    "total_knowledge_base": 3910565
+    "total_knowledge_base": 4063535
   },
   "relation_freq": [
     {
       "relation": "dblp:hasAuthor",
-      "count": 138,
-      "percent": 13.8
+      "count": 122,
+      "percent": 12.2
     },
     {
       "relation": "dblp:hasDOI",
-      "count": 111,
-      "percent": 11.1
+      "count": 127,
+      "percent": 12.7
     },
     {
       "relation": "dblp:hasLink",
-      "count": 140,
-      "percent": 14.0
+      "count": 123,
+      "percent": 12.3
     },
     {
       "relation": "dblp:inYear",
-      "count": 144,
-      "percent": 14.4
+      "count": 136,
+      "percent": 13.6
     },
     {
       "relation": "dblp:paperType",
-      "count": 114,
-      "percent": 11.4
+      "count": 148,
+      "percent": 14.8
     },
     {
       "relation": "dblp:partOf",
-      "count": 117,
-      "percent": 11.7
+      "count": 110,
+      "percent": 11.0
     },
     {
       "relation": "dblp:publishedIn",
-      "count": 117,
-      "percent": 11.7
+      "count": 125,
+      "percent": 12.5
     },
     {
       "relation": "dblp:wrote",
-      "count": 119,
-      "percent": 11.9
+      "count": 109,
+      "percent": 10.9
     }
   ],
   "hypotheses": [
     {
       "head": "generated_context",
-      "relation": "partOf",
-      "tail": "Haruo Yokota",
-      "score": "0.5476",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "Ramzi El-Haddadeh",
-      "score": "0.4771",
+      "relation": "hasAuthor",
+      "tail": "Andrew J. K. Phillips",
+      "score": "0.2538",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "publishedIn",
-      "tail": "10.1145/2851613.2851992",
-      "score": "0.5442",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "Jackson Souza",
-      "score": "0.2327",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "Fran\u00e7ois Ferland",
-      "score": "0.2761",
+      "tail": "Exploring Large Language Models in Active Learning for Annotating Physical Sensing Data.",
+      "score": "0.3517",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "inYear",
-      "tail": "https://doi.org/10.1109/IGARSS.2003.1293984",
-      "score": "0.3006",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "10.1109/IGARSS46834.2022.9884856",
-      "score": "0.2484",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "inYear",
-      "tail": "Huibin Gong",
-      "score": "0.2634",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "Fractional Types - Expressive and Safe Space Management for Ancilla Bits.",
-      "score": "0.4292",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasLink",
-      "tail": "Bao Zhu",
-      "score": "0.2925",
+      "tail": "https://doi.org/10.1109/ICRA.2019.8793545",
+      "score": "0.3550",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "hasAuthor",
-      "tail": "conf/vahc/2021",
-      "score": "0.2688",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasLink",
-      "tail": "Andrew Judson",
-      "score": "0.2376",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "https://escholarship.org/uc/item/2rq7b322",
-      "score": "0.2828",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "Avi Schwarzschild",
-      "score": "0.4544",
+      "tail": "Approximating warps with intra-warp operand value similarity.",
+      "score": "0.2411",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "paperType",
-      "tail": "https://doi.org/10.4230/LIPIcs.SNAPL.2015.79",
-      "score": "0.2916",
+      "tail": "https://ieeexplore.ieee.org/xpl/conhome/7517740/proceeding",
+      "score": "0.4885",
       "is_novel": true
     },
     {
       "head": "generated_context",
-      "relation": "inYear",
-      "tail": "B. Bhilkkaji",
-      "score": "0.2822",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasAuthor",
-      "tail": "https://doi.org/10.1145/3649329.3663513",
-      "score": "0.2365",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "partOf",
-      "tail": "https://doi.org/10.1109/MDM.2006.35",
-      "score": "0.5016",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasAuthor",
-      "tail": "Boosting and Nonparametric Based Tracking of Tagged MRI Cardiac Boundaries.",
-      "score": "0.2200",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "DMEA-II and its application on spam email detection problems.",
-      "score": "0.4209",
+      "relation": "wrote",
+      "tail": "Gregorius Ariyo Kresnadhi",
+      "score": "0.2317",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "paperType",
-      "tail": "in5: a Model for Inbodied Interaction.",
-      "score": "0.2979",
+      "tail": "Agata Gawlak",
+      "score": "0.3941",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "wrote",
+      "tail": "Human Behavior Assessment using Ensemble Models.",
+      "score": "0.2579",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "hasLink",
+      "tail": "Yingze Wang",
+      "score": "0.2458",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "paperType",
+      "tail": "https://doi.org/10.1109/SEAMS51251.2021.00015",
+      "score": "0.4402",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "hasDOI",
+      "tail": "https://doi.org/10.1007/978-3-319-49944-4_14",
+      "score": "1.0631",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "paperType",
+      "tail": "Aline da Silva Oliveira Neves",
+      "score": "0.3969",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "hasDOI",
+      "tail": "Qianhe Meng",
+      "score": "1.1284",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "paperType",
+      "tail": "Conditional Matching GAN Guided Reconstruction Attack in Machine Unlearning.",
+      "score": "0.4708",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "hasLink",
+      "tail": "Juan Pablo Chaverri",
+      "score": "0.2649",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "wrote",
+      "tail": "https://doi.org/10.1007/978-3-030-87202-1_58",
+      "score": "0.2197",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "paperType",
+      "tail": "Sergio Salg\u00fcero-Fern\u00e1ndez",
+      "score": "0.4318",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "hasDOI",
+      "tail": "Biomimicry of Crowd Evacuation with a Slime Mould Cellular Automaton Model.",
+      "score": "1.0772",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "hasDOI",
+      "tail": "10.1109/IGARSS39084.2020.9324382",
+      "score": "1.1294",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "wrote",
+      "tail": "Is cartoonized life-vlogging the key to increasing adoption of activity-oriented wearable camera systems?",
+      "score": "0.2933",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "hasLink",
+      "tail": "https://doi.org/10.32473/flairs.37.1.135354",
+      "score": "0.3057",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "hasDOI",
+      "tail": "Classical Proofs of Quantum Knowledge.",
+      "score": "1.0624",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "inYear",
-      "tail": "10.1007/978-3-540-24747-0_8",
-      "score": "0.2662",
+      "tail": "Paul Beata",
+      "score": "0.4017",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "hasDOI",
+      "tail": "https://doi.org/10.1109/IJCNN64981.2025.11227202",
+      "score": "1.0503",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "publishedIn",
-      "tail": "Albert C. Leighton",
-      "score": "0.5291",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "10.1145/3334480.3375039",
-      "score": "0.3962",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "inYear",
-      "tail": "https://doi.org/10.25080/majora-212e5952-021",
-      "score": "0.2212",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasLink",
-      "tail": "10.1109/CSCWD64889.2025.11033632",
-      "score": "0.3035",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "Symbolic Analysis of Terrorist Fraud Resistance.",
-      "score": "0.4043",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "paperType",
-      "tail": "Taichi Furukawa",
-      "score": "0.2848",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "inYear",
-      "tail": "A Preliminary Study of Self-Regulation Strategies in Chilean Engineering Students.",
-      "score": "0.2967",
+      "tail": "https://dl.gi.de/handle/20.500.12116/23161",
+      "score": "0.3469",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "wrote",
-      "tail": "Michael Vogl",
-      "score": "0.2573",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "Gareth J. Edwards",
-      "score": "0.4400",
+      "tail": "Taxonomy-Based Discovery and Annotation of Functional Areas in the City.",
+      "score": "0.2002",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "hasAuthor",
-      "tail": "Guangjian Huang",
-      "score": "0.2534",
+      "tail": "Equivariant Diffusion for Crystal Structure Prediction.",
+      "score": "0.2698",
       "is_novel": true
     },
     {
       "head": "generated_context",
-      "relation": "wrote",
-      "tail": "Group behavior from video: a data-driven approach to crowd simulation.",
-      "score": "0.1840",
+      "relation": "hasAuthor",
+      "tail": "Processing Tissue Micro-Array Images Using Machine Learning Techniques as Preparation for Determining Gleason Grade of Prostate Cancer.",
+      "score": "0.2664",
       "is_novel": true
     },
     {
       "head": "generated_context",
-      "relation": "hasLink",
-      "tail": "10.1007/978-3-642-29336-8_8",
-      "score": "0.2700",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "paperType",
-      "tail": "10.1109/IGARSS.2012.6351443",
-      "score": "0.2964",
+      "relation": "hasAuthor",
+      "tail": "https://doi.org/10.1109/ICCCNT.2018.8493722",
+      "score": "0.2986",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "publishedIn",
-      "tail": "Chetna Sharma",
-      "score": "0.5000",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "paperType",
-      "tail": "https://doi.org/10.1109/IGARSS.2012.6352090",
-      "score": "0.2905",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasAuthor",
-      "tail": "https://doi.org/10.1109/IGARSS.2015.7325718",
-      "score": "0.2365",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "paperType",
-      "tail": "10.1109/IJCNN.2011.6033368",
-      "score": "0.2921",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "inYear",
-      "tail": "Ron Ferens",
-      "score": "0.2871",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "Harsh",
-      "score": "0.4146",
+      "tail": "https://doi.org/10.1109/ICC45855.2022.9838929",
+      "score": "0.3705",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "partOf",
-      "tail": "Selective commitment and selective margin: Techniques to minimize cost in an IaaS cloud.",
-      "score": "0.5218",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "hasLink",
-      "tail": "https://doi.org/10.1007/978-3-030-59713-9_38",
-      "score": "0.2590",
+      "tail": "10.1007/978-3-030-22216-1_14",
+      "score": "0.7053",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "hasDOI",
-      "tail": "Borys Mychalczak",
-      "score": "0.4406",
+      "tail": "https://doi.org/10.1109/ICC.2017.7997034",
+      "score": "1.0978",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "paperType",
+      "tail": "Routu Santosh",
+      "score": "0.4649",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "hasLink",
-      "tail": "Gion-Pol Catregn",
-      "score": "0.3136",
+      "tail": "Raffaella Radogna",
+      "score": "0.2659",
       "is_novel": true
     },
     {
       "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "A. Marcolino",
-      "score": "0.4667",
+      "relation": "hasAuthor",
+      "tail": "https://doi.org/10.1145/3471872.3472968",
+      "score": "0.2908",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "hasLink",
+      "tail": "10.1109/IGARSS.2018.8518552",
+      "score": "0.2859",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "inYear",
-      "tail": "10.1109/ICNC.2008.586",
-      "score": "0.2940",
-      "is_novel": true
-    },
-    {
-      "head": "generated_context",
-      "relation": "paperType",
-      "tail": "10.1145/258612.258695",
-      "score": "0.2898",
+      "tail": "Julian Krumeich",
+      "score": "0.3255",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "hasDOI",
-      "tail": "Ken Peligren",
-      "score": "0.5426",
+      "tail": "Diane Tucker",
+      "score": "1.1544",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "partOf",
+      "tail": "Johan Osorio Estevez",
+      "score": "0.7975",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "inYear",
+      "tail": "https://doi.org/10.1109/VTS.2019.8758626",
+      "score": "0.3343",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "partOf",
+      "tail": "10.1145/3308557.3308714",
+      "score": "0.7867",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "inYear",
+      "tail": "Vivek R. S",
+      "score": "0.3463",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "partOf",
+      "tail": "Anushka Gupta",
+      "score": "0.7474",
       "is_novel": true
     },
     {
       "head": "generated_context",
       "relation": "paperType",
-      "tail": "Lefteris Stamatogiannakis",
-      "score": "0.2708",
+      "tail": "Akio Katsuki",
+      "score": "0.4487",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "partOf",
+      "tail": "10.1109/IECON48115.2021.9589134",
+      "score": "0.7974",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "wrote",
+      "tail": "10.1007/978-3-031-71379-8",
+      "score": "0.2474",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "wrote",
+      "tail": "Rachayita Giri",
+      "score": "0.2489",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "inYear",
+      "tail": "Comparative Analysis of Mechanically Induced Long Period Gratings Using Different 3D Printed Grooved Structure Shapes.",
+      "score": "0.3409",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "partOf",
+      "tail": "Roharsyafinaz Roslan",
+      "score": "0.8177",
+      "is_novel": true
+    },
+    {
+      "head": "generated_context",
+      "relation": "hasAuthor",
+      "tail": "https://doi.org/10.1145/3726302.3730257",
+      "score": "0.2482",
       "is_novel": true
     }
   ]
