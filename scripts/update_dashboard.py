@@ -188,7 +188,7 @@ def main():
 
     decoded_hypotheses = []
     for i, (h, r, t, score) in enumerate(synthetic_triples):
-        if i >= 50: break
+        if i >= 200: break
         
         head_name = id_to_name.get(h, h)
         tail_name = id_to_name.get(t, t)

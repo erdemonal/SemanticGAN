@@ -1,0 +1,68 @@
+name: Sync Results
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0,6,12,18 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+
+      - name: Check Hugging Face for Updates
+        id: check_hf
+        run: |
+          python -c "
+          import os
+          from huggingface_hub import HfApi
+          from datetime import datetime, timezone
+          api = HfApi()
+          try:
+              info = api.model_info('erdemonal/SemanticGAN')
+              is_new = (datetime.now(timezone.utc) - info.lastModified).total_seconds() < 21600
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write(f'updated={str(is_new).lower()}\n')
+          except:
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write('updated=true\n')
+          "
+
+      - name: Sync Data and Update Dashboard
+        if: steps.check_hf.outputs.updated == 'true' || github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p checkpoints data/processed data/synthetic
+          python -c "
+          from huggingface_hub import hf_hub_download
+          hf_hub_download(repo_id='erdemonal/SemanticGAN-Dataset', filename='kg_mappings.json', local_dir='data/processed/', repo_type='dataset')
+          hf_hub_download(repo_id='erdemonal/SemanticGAN', filename='gan_latest.pth', local_dir='checkpoints/')
+          hf_hub_download(repo_id='erdemonal/SemanticGAN', filename='training_log.csv', local_dir='data/processed/')
+          "
+          python scripts/update_dashboard.py
+          python scripts/plot_training.py || true
+
+      - name: Deploy Changes
+        if: steps.check_hf.outputs.updated == 'true' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add dashboard_data.json data/processed/loss_curve.png
+          git commit -m "dashboard auto-update [skip ci]" || exit 0
+          git push

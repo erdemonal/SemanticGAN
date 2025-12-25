@@ -65,7 +65,7 @@ CHECKPOINT_PATH = CHECKPOINT_DIR / "gan_latest.pth"
 LOG_FILE = Path("data/processed/training_log.csv")
 
 EMBEDDING_DIM = 128   
-BATCH_SIZE = 4096   
+BATCH_SIZE = 2048   
 HIDDEN_DIM = 256
 MAX_EPOCHS = 1000
 EPOCHS_PER_RUN = 1
@@ -145,6 +145,13 @@ def train():
                 optimizer_G.step()
                 total_g += g_loss.item()
                 g_updates += 1
+            
+            if i % 2000 == 0 and i > 0:
+                torch.save({
+                    "G_state": G.state_dict(),
+                    "D_state": D.state_dict(),
+                    "epoch": epoch
+                }, CHECKPOINT_PATH)
             
             if i % 1000 == 0:
                 gc.collect()

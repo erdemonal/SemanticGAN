@@ -97,11 +97,7 @@ h2 {
 
 .metric-card {
   padding: 15px 10px;
-  border-right: 1px solid #eee;
-}
-
-.metric-card:last-child {
-  border-right: none;
+  border: 1px solid #eee;
 }
 
 .metric-val {
