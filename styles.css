@@ -122,6 +122,7 @@ h2 {
 .table-wrapper {
   max-height: 600px;
   overflow-y: auto;
+  border: 1px solid var(--border);
 }
 
 table {
@@ -132,12 +133,15 @@ table {
 th {
   text-align: left;
   font-weight: 700;
+  padding: 12px 8px;
   border-top: 2px solid var(--border);
   border-bottom: 1px solid var(--border);
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 td {
   font-family: "Courier New", monospace;
+  padding: 10px 8px;
   border-bottom: 1px solid #eee;
 }
 
@@ -149,6 +153,7 @@ td {
 .table-loading {
   text-align: center;
   padding: 20px;
+  color: var(--text-muted);
 }
 
 
