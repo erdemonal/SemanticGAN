@@ -1,411 +1,1531 @@
 {
-  "last_updated": "2025-12-25 06:15 UTC",
+  "last_updated": "2025-12-26 14:21 UTC",
   "training_status": {
-    "epoch": 3,
-    "d_loss": -0.0055,
-    "g_loss": -0.0048
+    "epoch": 20,
+    "d_loss": -0.132,
+    "g_loss": 0.1537
   },
   "stats": {
     "novelty": 100.0,
     "train_overlap": 0.0,
-    "uniqueness": 99.9,
-    "relation_diversity": 100.0,
-    "avg_distance": 0.3391,
-    "schema_validity": 0.0,
-    "total_generated": 1000,
-    "total_knowledge_base": 4063535
+    "uniqueness": 100.0,
+    "relation_diversity": 146.67,
+    "avg_distance": -0.1522,
+    "schema_validity": 100.0,
+    "total_generated": 5000,
+    "total_knowledge_base": 1982324
   },
   "relation_freq": [
     {
-      "relation": "dblp:hasAuthor",
-      "count": 126,
-      "percent": 12.6
+      "relation": "11",
+      "count": 5,
+      "percent": 0.1
     },
     {
-      "relation": "dblp:hasDOI",
-      "count": 124,
-      "percent": 12.4
+      "relation": "13",
+      "count": 136,
+      "percent": 2.72
     },
     {
-      "relation": "dblp:hasLink",
-      "count": 124,
-      "percent": 12.4
+      "relation": "15",
+      "count": 6,
+      "percent": 0.12
     },
     {
-      "relation": "dblp:inYear",
-      "count": 112,
-      "percent": 11.2
+      "relation": "16",
+      "count": 3,
+      "percent": 0.06
     },
     {
-      "relation": "dblp:paperType",
-      "count": 128,
-      "percent": 12.8
+      "relation": "17",
+      "count": 13,
+      "percent": 0.26
     },
     {
-      "relation": "dblp:partOf",
-      "count": 135,
-      "percent": 13.5
+      "relation": "18",
+      "count": 17,
+      "percent": 0.34
     },
     {
-      "relation": "dblp:publishedIn",
-      "count": 122,
-      "percent": 12.2
+      "relation": "19",
+      "count": 7,
+      "percent": 0.14
     },
     {
-      "relation": "dblp:wrote",
-      "count": 129,
-      "percent": 12.9
+      "relation": "2",
+      "count": 149,
+      "percent": 2.98
+    },
+    {
+      "relation": "20",
+      "count": 8,
+      "percent": 0.16
+    },
+    {
+      "relation": "21",
+      "count": 6,
+      "percent": 0.12
+    },
+    {
+      "relation": "23",
+      "count": 9,
+      "percent": 0.18
+    },
+    {
+      "relation": "24",
+      "count": 1,
+      "percent": 0.02
+    },
+    {
+      "relation": "25",
+      "count": 11,
+      "percent": 0.22
+    },
+    {
+      "relation": "26",
+      "count": 2,
+      "percent": 0.04
+    },
+    {
+      "relation": "28",
+      "count": 1,
+      "percent": 0.02
+    },
+    {
+      "relation": "29",
+      "count": 1,
+      "percent": 0.02
+    },
+    {
+      "relation": "32",
+      "count": 8,
+      "percent": 0.16
+    },
+    {
+      "relation": "34",
+      "count": 338,
+      "percent": 6.76
+    },
+    {
+      "relation": "4",
+      "count": 5,
+      "percent": 0.1
+    },
+    {
+      "relation": "5",
+      "count": 4180,
+      "percent": 83.6
+    },
+    {
+      "relation": "6",
+      "count": 3,
+      "percent": 0.06
+    },
+    {
+      "relation": "9",
+      "count": 91,
+      "percent": 1.82
     }
   ],
   "hypotheses": [
     {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "An Optimal and Lightweight Convolutional Neural Network for Performance Evaluation in Smart Cities based on CAPTCHA Solving.",
-      "score": "0.7137",
+      "head": "Duo Xu 0002",
+      "relation": "5",
+      "tail": "conf/cvpr/1999",
+      "score": "0.0284",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "partOf",
-      "tail": "https://doi.org/10.1609/aaai.v39i28.35272",
-      "score": "0.4951",
+      "head": "Jon T. Butler",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0325",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "publishedIn",
-      "tail": "First Demonstration of 512-Color Shift Keying Signal Demodulation Using Neural Equalization for Optical Camera Communication.",
-      "score": "0.3310",
+      "head": "Matthew Purver",
+      "relation": "5",
+      "tail": "Pekka Laihanen",
+      "score": "-0.0241",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasLink",
-      "tail": "Areti Stringa",
-      "score": "0.2060",
+      "head": "Tao Zhang 0163",
+      "relation": "13",
+      "tail": "Santhiya Subramanian",
+      "score": "0.0002",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "One-Stage Training Generative Paradigm for Generalized Zero-Shot Learning.",
-      "score": "0.6187",
+      "head": "venue/journal/tog",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.0814",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasAuthor",
-      "tail": "Tsetsentsengel Munkhbayar",
-      "score": "0.1890",
+      "head": "Chia-Chi Liu",
+      "relation": "5",
+      "tail": "conf/icse/2014mise",
+      "score": "0.0215",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "partOf",
-      "tail": "William Washington",
-      "score": "0.4612",
+      "head": "Juan Pedro Llerena",
+      "relation": "5",
+      "tail": "Kriengsak Panuwatwanich",
+      "score": "-0.2019",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "partOf",
-      "tail": "https://doi.org/10.1109/IEEECONF60004.2024.10943083",
-      "score": "0.4723",
+      "head": "Wenhui Li",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasAuthor",
-      "tail": "Designing Dynamic and Adaptive MPI Point-to-Point Communication Protocols for Efficient Overlap of Computation and Communication.",
-      "score": "0.1884",
+      "head": "Siyi Hu",
+      "relation": "5",
+      "tail": "conf/gvd/1995",
+      "score": "0.0334",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "paperType",
-      "tail": "https://doi.org/10.1109/ICC45855.2022.9838516",
-      "score": "0.3593",
+      "head": "Natthakan Iam-On",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "0.0335",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "publishedIn",
-      "tail": "Children on ChatGPT Readability in an Educational Context: Myth or Opportunity?",
-      "score": "0.2617",
+      "head": "journals/access/QureshiRHSSMNWDCHAS25",
+      "relation": "23",
+      "tail": "1657-1662",
+      "score": "-0.1399",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "Development and Optimization of Wireless Indoor Localization Error Modelling.",
-      "score": "0.6366",
+      "head": "Emanuele Frontoni",
+      "relation": "5",
+      "tail": "conf/cvpr/1999",
+      "score": "-0.3144",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "10.1109/WCNC61545.2025.10978809",
-      "score": "0.2211",
+      "head": "Rmi Sharrock",
+      "relation": "5",
+      "tail": "Pekka Laihanen",
+      "score": "-0.0541",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "https://doi.org/10.1007/978-3-031-16210-7_35",
-      "score": "0.2606",
+      "head": "Jiahui Zhang",
+      "relation": "5",
+      "tail": "Brejesh Lall",
+      "score": "-0.2570",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "10.1007/978-3-030-34113-8_51",
-      "score": "0.7342",
+      "head": "M. Walker",
+      "relation": "5",
+      "tail": "conf/caise/92",
+      "score": "-0.3148",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "An Attention Enhanced Graph Convolutional Network for Semantic Segmentation.",
-      "score": "0.2397",
+      "head": "Douglas Iain Ross Boyle",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0530",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "10.1007/978-3-031-97554-7_14",
-      "score": "0.6173",
+      "head": "journals/corr/abs-2410-08102",
+      "relation": "9",
+      "tail": "Steven R. Hursh",
+      "score": "-0.2339",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "partOf",
-      "tail": "RESAR: Reliable Storage at Exabyte Scale.",
-      "score": "0.3849",
+      "head": "venue/journal/wc",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.0817",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "publishedIn",
-      "tail": "Decision Support Dashboard for Traffic and Environment Analysis of a Smart City.",
-      "score": "0.2978",
+      "head": "Malcolm S. Ware",
+      "relation": "5",
+      "tail": "conf/gvd/1995",
+      "score": "-0.3171",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "partOf",
-      "tail": "10.1109/VTCFall.2016.7881203",
-      "score": "0.4035",
+      "head": "Henrik Svensson",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0203",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "10.1109/SLT54892.2023.10022676",
-      "score": "0.2313",
+      "head": "Yidan Xu",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasLink",
-      "tail": "10.1109/DeSE.2019.00108",
-      "score": "0.2437",
+      "head": "Dongwon Lee 0001",
+      "relation": "5",
+      "tail": "Tony Blakely",
+      "score": "-0.2877",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasAuthor",
-      "tail": "A survey of 5G network systems: trends and Deep Learning approaches.",
-      "score": "0.1608",
+      "head": "Oliver Kroemer",
+      "relation": "5",
+      "tail": "conf/caise/92",
+      "score": "-0.3082",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasLink",
-      "tail": "Christian Di Maio",
-      "score": "0.2723",
+      "head": "venue/journal/air",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.0827",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasAuthor",
-      "tail": "Acoustic Scene Classification Using Reduced MobileNet Architecture.",
-      "score": "0.1997",
+      "head": "Franois P. Hamon",
+      "relation": "5",
+      "tail": "Tao Luo 0009",
+      "score": "-0.1596",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "partOf",
-      "tail": "https://doi.org/10.1109/BigDataService49289.2020.00028",
-      "score": "0.4183",
+      "head": "Zhidu Li",
+      "relation": "5",
+      "tail": "Rajaram Tukaram Ugale",
+      "score": "-0.0706",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "10.1109/ICM60448.2023.10378909",
-      "score": "0.6368",
+      "head": "Haifeng Xing",
+      "relation": "5",
+      "tail": "Pekka Laihanen",
+      "score": "-0.2961",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "paperType",
-      "tail": "Fran\u00e7ois Beaudeau",
-      "score": "0.3126",
+      "head": "Pedro Carmona-Saez",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0197",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "inYear",
-      "tail": "https://repository.isls.org/handle/1/4547",
-      "score": "0.2868",
+      "head": "David B. H. Tay",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "0.0343",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasAuthor",
-      "tail": "Dynamic Adaptation of IP Virtual Network Topologies over Multi-Granular (Wavelength and Waveband) Optical Networks Supported by ETSI TeraFlowSDN multi-layer Control.",
-      "score": "0.2491",
+      "head": "Arif Ur Rahman",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.2961",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasLink",
-      "tail": "Challenging the State-of-the-art Machine Translation Metrics from a Linguistic Perspective.",
-      "score": "0.2644",
+      "head": "Yuhang Huang",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "Marthe Lagarrigue-Charbonnier",
-      "score": "0.2158",
+      "head": "Youji Kohda",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "-0.3109",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "inYear",
-      "tail": "Wan Salwina Wan Ismail",
-      "score": "0.2615",
+      "head": "Naoki Sawada",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "-0.3109",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "https://doi.org/10.1109/ICCCNT56998.2023.10306581",
-      "score": "0.2382",
+      "head": "Youjun Liu",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "0.0335",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasLink",
-      "tail": "10.1007/978-3-031-19958-5_32",
-      "score": "0.3527",
+      "head": "Jiawan Zhang",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "paperType",
-      "tail": "https://aisel.aisnet.org/pacis2023/42",
-      "score": "0.3572",
+      "head": "venue/conf/biostec",
+      "relation": "34",
+      "tail": "Akhtar Razul Razali",
+      "score": "-0.2493",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "inYear",
-      "tail": "Usman Ahmad 0002",
-      "score": "0.3254",
+      "head": "journals/tkde/SunYSXDCXW24",
+      "relation": "23",
+      "tail": "1657-1662",
+      "score": "-0.0410",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasAuthor",
-      "tail": "10.1109/ICCCNT56998.2023.10306985",
-      "score": "0.2106",
+      "head": "Xiyu Liu 0001",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3056",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "partOf",
-      "tail": "https://doi.org/10.1007/978-3-031-14926-9_1",
-      "score": "0.3817",
+      "head": "Dong Nhi Truong",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasAuthor",
-      "tail": "https://doi.org/10.1109/INFOCOM.2019.8737503",
-      "score": "0.2762",
+      "head": "Katharine J. Cahill",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "-0.3171",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "Ilia P. Nikolaev",
-      "score": "0.1957",
+      "head": "Kiyoshi Kiyokawa",
+      "relation": "5",
+      "tail": "Carlo Andrenacci",
+      "score": "-0.0240",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "partOf",
-      "tail": "10.1109/VLSID.2016.32",
-      "score": "0.4822",
+      "head": "Mario Zagar",
+      "relation": "5",
+      "tail": "Pekka Laihanen",
+      "score": "-0.0522",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "paperType",
-      "tail": "Arhana Chattopadhyay",
-      "score": "0.3264",
+      "head": "Tanya Barrett",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "-0.3171",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "https://doi.org/10.1109/ICC.2016.7511413",
-      "score": "0.6912",
+      "head": "conf/ofc/SuzukiOMYHSSKNKUOMCFMM24",
+      "relation": "9",
+      "tail": "Steven R. Hursh",
+      "score": "-0.0702",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "Harnessing Adversarial Distances to Discover High-Confidence Errors.",
-      "score": "0.1987",
+      "head": "Rosilah Hassan",
+      "relation": "5",
+      "tail": "conf/caise/92",
+      "score": "0.0321",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "wrote",
-      "tail": "10.1109/ISGTEurope.2016.7856180",
-      "score": "0.2560",
+      "head": "Melquades Prez Prez",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0325",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasDOI",
-      "tail": "Object detection and colour evaluation of multicoloured waste textiles using machine vision.",
-      "score": "0.7314",
+      "head": "Hung Tran",
+      "relation": "5",
+      "tail": "Pekka Laihanen",
+      "score": "-0.0097",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "paperType",
-      "tail": "Amir Ziaee",
-      "score": "0.3848",
+      "head": "Ashwin Lahorkar",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "-0.2815",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasLink",
-      "tail": "conf/pkdd/2022mlsa",
-      "score": "0.3127",
+      "head": "Jinhui Fang",
+      "relation": "5",
+      "tail": "conf/caise/92",
+      "score": "0.0316",
       "is_novel": true
     },
     {
-      "head": "generated_context",
-      "relation": "hasAuthor",
-      "tail": "10.1145/2818143",
-      "score": "0.2082",
+      "head": "Zhilin Liu",
+      "relation": "5",
+      "tail": "Tony Blakely",
+      "score": "-0.2918",
+      "is_novel": true
+    },
+    {
+      "head": "Shuliang Bai",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0115",
+      "is_novel": true
+    },
+    {
+      "head": "Ruolan Wu",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "0.0335",
+      "is_novel": true
+    },
+    {
+      "head": "conf/icmla/AlnemerACDBIK11",
+      "relation": "9",
+      "tail": "Steven R. Hursh",
+      "score": "-0.2195",
+      "is_novel": true
+    },
+    {
+      "head": "Emma Dauterman",
+      "relation": "5",
+      "tail": "Tony Blakely",
+      "score": "-0.0569",
+      "is_novel": true
+    },
+    {
+      "head": "Xun Chen 0002",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
+      "is_novel": true
+    },
+    {
+      "head": "Remus Pusca",
+      "relation": "5",
+      "tail": "Pekka Laihanen",
+      "score": "-0.0438",
+      "is_novel": true
+    },
+    {
+      "head": "Michael L. Wick",
+      "relation": "5",
+      "tail": "conf/mie/AhamedWBJSMBRPF21",
+      "score": "-0.2639",
+      "is_novel": true
+    },
+    {
+      "head": "Zhengling He",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
+      "is_novel": true
+    },
+    {
+      "head": "Shuang Gao",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "0.0216",
+      "is_novel": true
+    },
+    {
+      "head": "Eleftherios D. Polychronopoulos",
+      "relation": "5",
+      "tail": "conf/gvd/1995",
+      "score": "-0.3164",
+      "is_novel": true
+    },
+    {
+      "head": "Elizaveta Semenova",
+      "relation": "5",
+      "tail": "Tony Blakely",
+      "score": "-0.0575",
+      "is_novel": true
+    },
+    {
+      "head": "Matjaz Debevc",
+      "relation": "5",
+      "tail": "conf/caise/92",
+      "score": "-0.3148",
+      "is_novel": true
+    },
+    {
+      "head": "venue/journal/nca",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.0827",
+      "is_novel": true
+    },
+    {
+      "head": "Gerard Lassche",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0325",
+      "is_novel": true
+    },
+    {
+      "head": "Rui Zhang 0003",
+      "relation": "13",
+      "tail": "Santhiya Subramanian",
+      "score": "-0.0247",
+      "is_novel": true
+    },
+    {
+      "head": "Abhishek Venkatesh Jnanashree",
+      "relation": "5",
+      "tail": "Rajaram Tukaram Ugale",
+      "score": "-0.2590",
+      "is_novel": true
+    },
+    {
+      "head": "Yubao Guan",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
+      "is_novel": true
+    },
+    {
+      "head": "Mingfeng Zhao",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "0.0252",
+      "is_novel": true
+    },
+    {
+      "head": "Danielle Albers Szafir",
+      "relation": "5",
+      "tail": "conf/gvd/1995",
+      "score": "-0.3104",
+      "is_novel": true
+    },
+    {
+      "head": "Chad Atalla",
+      "relation": "5",
+      "tail": "Pekka Laihanen",
+      "score": "-0.0349",
+      "is_novel": true
+    },
+    {
+      "head": "Serge J. Belongie",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0747",
+      "is_novel": true
+    },
+    {
+      "head": "Marwan Hadri Azmi",
+      "relation": "5",
+      "tail": "conf/icse/2014mise",
+      "score": "0.0274",
+      "is_novel": true
+    },
+    {
+      "head": "Feng Liu",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
+      "is_novel": true
+    },
+    {
+      "head": "Michal Uricr",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "-0.3109",
+      "is_novel": true
+    },
+    {
+      "head": "Masatoshi Ishikawa",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0325",
+      "is_novel": true
+    },
+    {
+      "head": "Jos Adn Hernndez-Nolasco",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0325",
+      "is_novel": true
+    },
+    {
+      "head": "Jayme Luiz Szwarcfiter",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0325",
+      "is_novel": true
+    },
+    {
+      "head": "Tingsong Lu",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.2981",
+      "is_novel": true
+    },
+    {
+      "head": "Miao Jiang 0001",
+      "relation": "5",
+      "tail": "conf/gvd/1995",
+      "score": "0.0334",
+      "is_novel": true
+    },
+    {
+      "head": "Srgio Fabres",
+      "relation": "5",
+      "tail": "Carlo Andrenacci",
+      "score": "-0.0094",
+      "is_novel": true
+    },
+    {
+      "head": "Tianming Liu 0001",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3092",
+      "is_novel": true
+    },
+    {
+      "head": "Frank Y. Chang",
+      "relation": "5",
+      "tail": "Carlo Andrenacci",
+      "score": "-0.0083",
+      "is_novel": true
+    },
+    {
+      "head": "Yanru Zeng",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.2954",
+      "is_novel": true
+    },
+    {
+      "head": "venue/journal/comgeo",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.0827",
+      "is_novel": true
+    },
+    {
+      "head": "Wei Gong 0003",
+      "relation": "5",
+      "tail": "conf/caise/92",
+      "score": "0.0394",
+      "is_novel": true
+    },
+    {
+      "head": "Gholamali Aminian",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "-0.2697",
+      "is_novel": true
+    },
+    {
+      "head": "Bernhard Mlecnik",
+      "relation": "5",
+      "tail": "S. S. Shylaja",
+      "score": "-0.0875",
+      "is_novel": true
+    },
+    {
+      "head": "Pawel Drozdowski",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "-0.3109",
+      "is_novel": true
+    },
+    {
+      "head": "Qin Liu 0001",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
+      "is_novel": true
+    },
+    {
+      "head": "Ying-Chang Liang",
+      "relation": "5",
+      "tail": "Tony Blakely",
+      "score": "-0.2939",
+      "is_novel": true
+    },
+    {
+      "head": "Trisha N. Davis",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.2091",
+      "is_novel": true
+    },
+    {
+      "head": "Raul Castro Fernandez",
+      "relation": "5",
+      "tail": "Norah E. Dunbar",
+      "score": "-0.0969",
+      "is_novel": true
+    },
+    {
+      "head": "Shuchi Chawla 0001",
+      "relation": "13",
+      "tail": "Santhiya Subramanian",
+      "score": "-0.2850",
+      "is_novel": true
+    },
+    {
+      "head": "Shaohan Huang",
+      "relation": "5",
+      "tail": "Arantza Basauri",
+      "score": "-0.1523",
+      "is_novel": true
+    },
+    {
+      "head": "Zhongxin Chen",
+      "relation": "5",
+      "tail": "Tony Blakely",
+      "score": "-0.2842",
+      "is_novel": true
+    },
+    {
+      "head": "Atlas Haddadi Avval",
+      "relation": "5",
+      "tail": "conf/cvpr/1999",
+      "score": "-0.3031",
+      "is_novel": true
+    },
+    {
+      "head": "Bing Wang 0006",
+      "relation": "5",
+      "tail": "Jean de Bissy",
+      "score": "-0.3181",
+      "is_novel": true
+    },
+    {
+      "head": "Fanyu Meng",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "0.0216",
+      "is_novel": true
+    },
+    {
+      "head": "Joshua H. Tyler",
+      "relation": "5",
+      "tail": "Tony Blakely",
+      "score": "-0.1405",
+      "is_novel": true
+    },
+    {
+      "head": "Conghao Wang",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
+      "is_novel": true
+    },
+    {
+      "head": "Stefan Simm",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "-0.3171",
+      "is_novel": true
+    },
+    {
+      "head": "Mert Grtrk",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0687",
+      "is_novel": true
+    },
+    {
+      "head": "Hiroshi G. Okuno",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0325",
+      "is_novel": true
+    },
+    {
+      "head": "Wanlan Yang",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "0.0350",
+      "is_novel": true
+    },
+    {
+      "head": "Fuzhou Niu",
+      "relation": "5",
+      "tail": "conf/gvd/1995",
+      "score": "0.0334",
+      "is_novel": true
+    },
+    {
+      "head": "Tiejun Cui",
+      "relation": "5",
+      "tail": "Tony Blakely",
+      "score": "-0.2939",
+      "is_novel": true
+    },
+    {
+      "head": "Keqin Li 0001",
+      "relation": "13",
+      "tail": "Santhiya Subramanian",
+      "score": "-0.0247",
+      "is_novel": true
+    },
+    {
+      "head": "Nicholas Jing Yuan",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "0.0216",
+      "is_novel": true
+    },
+    {
+      "head": "Andrea Conti 0001",
+      "relation": "2",
+      "tail": "conf/waoa/2015",
+      "score": "-0.3029",
+      "is_novel": true
+    },
+    {
+      "head": "Minxue Pan",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
+      "is_novel": true
+    },
+    {
+      "head": "Su Liu",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3097",
+      "is_novel": true
+    },
+    {
+      "head": "Carla Guilln",
+      "relation": "5",
+      "tail": "conf/gvd/1995",
+      "score": "-0.3160",
+      "is_novel": true
+    },
+    {
+      "head": "Martin Ellis",
+      "relation": "5",
+      "tail": "conf/vl/2021",
+      "score": "-0.3004",
+      "is_novel": true
+    },
+    {
+      "head": "Tara Capel",
+      "relation": "5",
+      "tail": "Carlo Andrenacci",
+      "score": "-0.0187",
+      "is_novel": true
+    },
+    {
+      "head": "Kang Chen",
+      "relation": "5",
+      "tail": "conf/cisc/2006",
+      "score": "0.0226",
+      "is_novel": true
+    },
+    {
+      "head": "Kazue Hata",
+      "relation": "5",
+      "tail": "Carlo Andrenacci",
+      "score": "-0.0090",
+      "is_novel": true
+    },
+    {
+      "head": "Irene Van Den Broek",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.2891",
+      "is_novel": true
+    },
+    {
+      "head": "Lichen Zhang 0001",
+      "relation": "5",
+      "tail": "conf/ascat/2023",
+      "score": "-0.0224",
+      "is_novel": true
+    },
+    {
+      "head": "Li Li 0094",
+      "relation": "5",
+      "tail": "224-234",
+      "score": "-0.2918",
+      "is_novel": true
+    },
+    {
+      "head": "Brian Cheung",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0081",
+      "is_novel": true
+    },
+    {
+      "head": "Juerg Leuthold",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0325",
+      "is_novel": true
+    },
+    {
+      "head": "Kesari Mishra",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "-0.2828",
+      "is_novel": true
+    },
+    {
+      "head": "Jing Liu 0050",
+      "relation": "5",
+      "tail": "Arantza Basauri",
+      "score": "-0.1540",
+      "is_novel": true
+    },
+    {
+      "head": "Abel N. Kho",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "-0.3101",
+      "is_novel": true
+    },
+    {
+      "head": "venue/conf/icassp",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.2613",
+      "is_novel": true
+    },
+    {
+      "head": "venue/journal/symmetry",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.0827",
+      "is_novel": true
+    },
+    {
+      "head": "venue/journal/symmetry",
+      "relation": "34",
+      "tail": "Benjamin Goislard de Monsabert",
+      "score": "-0.0973",
+      "is_novel": true
+    },
+    {
+      "head": "Kao-Hua Liu",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0325",
+      "is_novel": true
+    },
+    {
+      "head": "Yu Su 0002",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "0.0304",
+      "is_novel": true
+    },
+    {
+      "head": "Yue Kang",
+      "relation": "5",
+      "tail": "Srinivas Shakkottai",
+      "score": "-0.2311",
+      "is_novel": true
+    },
+    {
+      "head": "Cristina Elena Hanganu",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "-0.3171",
+      "is_novel": true
+    },
+    {
+      "head": "Jyoti Khadake",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0325",
+      "is_novel": true
+    },
+    {
+      "head": "journals/jocn/SuthanaDWBJHTES15",
+      "relation": "9",
+      "tail": "Steven R. Hursh",
+      "score": "-0.1008",
+      "is_novel": true
+    },
+    {
+      "head": "journals/corr/abs-2304-09657",
+      "relation": "9",
+      "tail": "Steven R. Hursh",
+      "score": "-0.0856",
+      "is_novel": true
+    },
+    {
+      "head": "Caio Csar Mori Carlo",
+      "relation": "5",
+      "tail": "Pekka Laihanen",
+      "score": "-0.0292",
+      "is_novel": true
+    },
+    {
+      "head": "Jonathan Graff-Radford",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "-0.1466",
+      "is_novel": true
+    },
+    {
+      "head": "Weihua Li 0001",
+      "relation": "2",
+      "tail": "conf/waoa/2015",
+      "score": "-0.0137",
+      "is_novel": true
+    },
+    {
+      "head": "Anatole Lcuyer",
+      "relation": "5",
+      "tail": "conf/vl/2021",
+      "score": "-0.3006",
+      "is_novel": true
+    },
+    {
+      "head": "Jess Andrs-Ferrer",
+      "relation": "5",
+      "tail": "conf/paclic/2022",
+      "score": "-0.2754",
+      "is_novel": true
+    },
+    {
+      "head": "Marco Pavone 0001",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "0.0327",
+      "is_novel": true
+    },
+    {
+      "head": "journals/artmed/PengOWYZSLFHH20",
+      "relation": "32",
+      "tail": "Albertus Joko Santoso",
+      "score": "-0.0725",
+      "is_novel": true
+    },
+    {
+      "head": "venue/conf/iconip",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.2613",
+      "is_novel": true
+    },
+    {
+      "head": "Gabriel Fischer Abati",
+      "relation": "5",
+      "tail": "conf/cisc/2006",
+      "score": "-0.3023",
+      "is_novel": true
+    },
+    {
+      "head": "Christopher R",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "-0.3166",
+      "is_novel": true
+    },
+    {
+      "head": "Zhigang Zhu",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "0.0335",
+      "is_novel": true
+    },
+    {
+      "head": "Ivan Kobyzev",
+      "relation": "5",
+      "tail": "Silvana Pinheiro",
+      "score": "-0.3002",
+      "is_novel": true
+    },
+    {
+      "head": "Robert T. Schweller",
+      "relation": "5",
+      "tail": "conf/mie/AhamedWBJSMBRPF21",
+      "score": "-0.3023",
+      "is_novel": true
+    },
+    {
+      "head": "Jiancheng Lv 0001",
+      "relation": "13",
+      "tail": "Mohammed H. Ibrahim",
+      "score": "-0.0774",
+      "is_novel": true
+    },
+    {
+      "head": "Shih-Chun Lin 0002",
+      "relation": "2",
+      "tail": "conf/waoa/2015",
+      "score": "0.0051",
+      "is_novel": true
+    },
+    {
+      "head": "Brian Lynn",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0510",
+      "is_novel": true
+    },
+    {
+      "head": "venue/journal/jaciii",
+      "relation": "34",
+      "tail": "Poernomo Gunawan",
+      "score": "-0.0674",
+      "is_novel": true
+    },
+    {
+      "head": "Juan Mateu",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "-0.3056",
+      "is_novel": true
+    },
+    {
+      "head": "Ruyi Feng",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
+      "is_novel": true
+    },
+    {
+      "head": "Zexuan Ji",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "0.0216",
+      "is_novel": true
+    },
+    {
+      "head": "Shuang Liang 0007",
+      "relation": "2",
+      "tail": "conf/waoa/2015",
+      "score": "-0.0136",
+      "is_novel": true
+    },
+    {
+      "head": "Alfred Kobsa",
+      "relation": "5",
+      "tail": "Brejesh Lall",
+      "score": "-0.0927",
+      "is_novel": true
+    },
+    {
+      "head": "venue/journal/tbe",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.0827",
+      "is_novel": true
+    },
+    {
+      "head": "Zhitao Xiao",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "0.0216",
+      "is_novel": true
+    },
+    {
+      "head": "Carolina Fernandes",
+      "relation": "5",
+      "tail": "conf/vl/2021",
+      "score": "-0.0763",
+      "is_novel": true
+    },
+    {
+      "head": "venue/conf/acl",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.2612",
+      "is_novel": true
+    },
+    {
+      "head": "Zhonglong Zheng",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3085",
+      "is_novel": true
+    },
+    {
+      "head": "Axel Jantsch",
+      "relation": "5",
+      "tail": "Anton Kruger",
+      "score": "-0.1562",
+      "is_novel": true
+    },
+    {
+      "head": "Daniel McDuff",
+      "relation": "5",
+      "tail": "conf/ascat/2023",
+      "score": "-0.2811",
+      "is_novel": true
+    },
+    {
+      "head": "Francesco Guzzi",
+      "relation": "5",
+      "tail": "conf/gvd/1995",
+      "score": "-0.3171",
+      "is_novel": true
+    },
+    {
+      "head": "Dirk-Bart den Ouden",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0528",
+      "is_novel": true
+    },
+    {
+      "head": "Ann-Christin Klnker",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0419",
+      "is_novel": true
+    },
+    {
+      "head": "Kaili Zhang",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
+      "is_novel": true
+    },
+    {
+      "head": "Nate C. Apathy",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "-0.3169",
+      "is_novel": true
+    },
+    {
+      "head": "venue/journal/ijflis",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.0827",
+      "is_novel": true
+    },
+    {
+      "head": "Julien Milles",
+      "relation": "5",
+      "tail": "Mostafa Ghorbandoost",
+      "score": "-0.1181",
+      "is_novel": true
+    },
+    {
+      "head": "Jie Yang",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3092",
+      "is_novel": true
+    },
+    {
+      "head": "Rui Zhang",
+      "relation": "5",
+      "tail": "Pekka Laihanen",
+      "score": "-0.2941",
+      "is_novel": true
+    },
+    {
+      "head": "Ivan Scagnetto",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0323",
+      "is_novel": true
+    },
+    {
+      "head": "Jiang Liu 0001",
+      "relation": "13",
+      "tail": "Santhiya Subramanian",
+      "score": "-0.0222",
+      "is_novel": true
+    },
+    {
+      "head": "Fei Wu",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3065",
+      "is_novel": true
+    },
+    {
+      "head": "Michael Hubner",
+      "relation": "5",
+      "tail": "conf/caise/92",
+      "score": "-0.3064",
+      "is_novel": true
+    },
+    {
+      "head": "Timothy Kam",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "-0.3109",
+      "is_novel": true
+    },
+    {
+      "head": "Mohammad Bataineh 0001",
+      "relation": "5",
+      "tail": "Lyndsay Shand",
+      "score": "-0.2547",
+      "is_novel": true
+    },
+    {
+      "head": "Houcheng Jiang",
+      "relation": "5",
+      "tail": "Tony Blakely",
+      "score": "-0.2939",
+      "is_novel": true
+    },
+    {
+      "head": "venue/conf/www",
+      "relation": "34",
+      "tail": "Cline Morin",
+      "score": "-0.2597",
+      "is_novel": true
+    },
+    {
+      "head": "venue/journal/tac",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.0814",
+      "is_novel": true
+    },
+    {
+      "head": "venue/journal/tjs",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.0827",
+      "is_novel": true
+    },
+    {
+      "head": "Hermenegild Arevalo",
+      "relation": "5",
+      "tail": "Rajaram Tukaram Ugale",
+      "score": "-0.2590",
+      "is_novel": true
+    },
+    {
+      "head": "Cheng Zhen",
+      "relation": "5",
+      "tail": "Tony Blakely",
+      "score": "-0.2939",
+      "is_novel": true
+    },
+    {
+      "head": "Luca Soldaini",
+      "relation": "5",
+      "tail": "conf/gvd/1995",
+      "score": "-0.3169",
+      "is_novel": true
+    },
+    {
+      "head": "venue/journal/fcomp",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.0827",
+      "is_novel": true
+    },
+    {
+      "head": "Gang Dong",
+      "relation": "5",
+      "tail": "S. T. Veena",
+      "score": "0.0216",
+      "is_novel": true
+    },
+    {
+      "head": "Steve Fischer",
+      "relation": "5",
+      "tail": "conf/avss/2022",
+      "score": "-0.3171",
+      "is_novel": true
+    },
+    {
+      "head": "Qimeng Wang",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
+      "is_novel": true
+    },
+    {
+      "head": "conf/pods/FukudaMMT96",
+      "relation": "17",
+      "tail": "conf/mmns/2009",
+      "score": "-0.1476",
+      "is_novel": true
+    },
+    {
+      "head": "Marco Nolden",
+      "relation": "5",
+      "tail": "Silvana Pinheiro",
+      "score": "-0.0119",
+      "is_novel": true
+    },
+    {
+      "head": "Qizhi Qiu",
+      "relation": "5",
+      "tail": "Tony Blakely",
+      "score": "-0.2939",
+      "is_novel": true
+    },
+    {
+      "head": "Zhihui Zhu",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3098",
+      "is_novel": true
+    },
+    {
+      "head": "Julia A. Schnabel",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0306",
+      "is_novel": true
+    },
+    {
+      "head": "Vianney Boeuf",
+      "relation": "5",
+      "tail": "Arantza Basauri",
+      "score": "-0.1807",
+      "is_novel": true
+    },
+    {
+      "head": "Allison Druin",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.0322",
+      "is_novel": true
+    },
+    {
+      "head": "Kun Wang",
+      "relation": "5",
+      "tail": "conf/mie/AhamedWBJSMBRPF21",
+      "score": "0.0094",
+      "is_novel": true
+    },
+    {
+      "head": "Mohammed A. Awadallah 0001",
+      "relation": "5",
+      "tail": "Guy O. Billings",
+      "score": "-0.3063",
+      "is_novel": true
+    },
+    {
+      "head": "venue/conf/bir",
+      "relation": "34",
+      "tail": "Rosinta Ria Panggabean",
+      "score": "-0.2613",
+      "is_novel": true
+    },
+    {
+      "head": "Lorenzo Giusti",
+      "relation": "5",
+      "tail": "Pekka Laihanen",
+      "score": "-0.0319",
       "is_novel": true
     }
   ]
