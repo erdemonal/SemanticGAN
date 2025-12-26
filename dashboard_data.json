@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-26 14:46 UTC",
+  "last_updated": "2025-12-26 16:53 UTC",
   "training_status": {
     "epoch": 40,
     "d_loss": -0.132,
@@ -132,1401 +132,701 @@
       "head": "Duo Xu 0002",
       "relation": "coauthorWith",
       "tail": "conf/cvpr/1999",
-      "score": "0.0284",
-      "is_novel": true
+      "score": 0.0284,
+      "status": "Structural Match"
     },
     {
       "head": "Jon T. Butler",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.0325",
-      "is_novel": true
+      "score": -0.0325,
+      "status": "Verified"
     },
     {
       "head": "Matthew Purver",
       "relation": "coauthorWith",
       "tail": "Pekka Laihanen",
-      "score": "-0.0241",
-      "is_novel": true
+      "score": -0.0241,
+      "status": "Verified"
     },
     {
       "head": "Tao Zhang 0163",
       "relation": "homonymID",
       "tail": "Santhiya Subramanian",
-      "score": "0.0002",
-      "is_novel": true
+      "score": 0.0002,
+      "status": "Structural Match"
     },
     {
       "head": "venue/journal/tog",
       "relation": "type",
       "tail": "Rosinta Ria Panggabean",
-      "score": "-0.0814",
-      "is_novel": true
+      "score": -0.0814,
+      "status": "Verified"
     },
     {
       "head": "Chia-Chi Liu",
       "relation": "coauthorWith",
       "tail": "conf/icse/2014mise",
-      "score": "0.0215",
-      "is_novel": true
+      "score": 0.0215,
+      "status": "Structural Match"
     },
     {
       "head": "Juan Pedro Llerena",
       "relation": "coauthorWith",
       "tail": "Kriengsak Panuwatwanich",
-      "score": "-0.2019",
-      "is_novel": true
+      "score": -0.2019,
+      "status": "Verified"
     },
     {
       "head": "Wenhui Li",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
+      "score": -0.3098,
+      "status": "Verified"
     },
     {
       "head": "Siyi Hu",
       "relation": "coauthorWith",
       "tail": "conf/gvd/1995",
-      "score": "0.0334",
-      "is_novel": true
+      "score": 0.0334,
+      "status": "Structural Match"
     },
     {
       "head": "Natthakan Iam-On",
       "relation": "coauthorWith",
       "tail": "conf/avss/2022",
-      "score": "0.0335",
-      "is_novel": true
+      "score": 0.0335,
+      "status": "Structural Match"
     },
     {
       "head": "journals/access/QureshiRHSSMNWDCHAS25",
       "relation": "publishedInJournal",
       "tail": "1657-1662",
-      "score": "-0.1399",
-      "is_novel": true
+      "score": -0.1399,
+      "status": "Verified"
     },
     {
       "head": "Emanuele Frontoni",
       "relation": "coauthorWith",
       "tail": "conf/cvpr/1999",
-      "score": "-0.3144",
-      "is_novel": true
+      "score": -0.3144,
+      "status": "Structural Match"
     },
     {
       "head": "Rmi Sharrock",
       "relation": "coauthorWith",
       "tail": "Pekka Laihanen",
-      "score": "-0.0541",
-      "is_novel": true
+      "score": -0.0541,
+      "status": "Verified"
     },
     {
       "head": "Jiahui Zhang",
       "relation": "coauthorWith",
       "tail": "Brejesh Lall",
-      "score": "-0.2570",
-      "is_novel": true
+      "score": -0.257,
+      "status": "Verified"
     },
     {
       "head": "M. Walker",
       "relation": "coauthorWith",
       "tail": "conf/caise/92",
-      "score": "-0.3148",
-      "is_novel": true
+      "score": -0.3148,
+      "status": "Structural Match"
     },
     {
       "head": "Douglas Iain Ross Boyle",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.0530",
-      "is_novel": true
+      "score": -0.053,
+      "status": "Verified"
     },
     {
       "head": "journals/corr/abs-2410-08102",
       "relation": "hasAuthor",
       "tail": "Steven R. Hursh",
-      "score": "-0.2339",
-      "is_novel": true
+      "score": -0.2339,
+      "status": "Verified"
     },
     {
       "head": "venue/journal/wc",
       "relation": "type",
       "tail": "Rosinta Ria Panggabean",
-      "score": "-0.0817",
-      "is_novel": true
+      "score": -0.0817,
+      "status": "Verified"
     },
     {
       "head": "Malcolm S. Ware",
       "relation": "coauthorWith",
       "tail": "conf/gvd/1995",
-      "score": "-0.3171",
-      "is_novel": true
+      "score": -0.3171,
+      "status": "Structural Match"
     },
     {
       "head": "Henrik Svensson",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.0203",
-      "is_novel": true
+      "score": -0.0203,
+      "status": "Verified"
     },
     {
       "head": "Yidan Xu",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
+      "score": -0.3098,
+      "status": "Verified"
     },
     {
       "head": "Dongwon Lee 0001",
       "relation": "coauthorWith",
       "tail": "Tony Blakely",
-      "score": "-0.2877",
-      "is_novel": true
+      "score": -0.2877,
+      "status": "Verified"
     },
     {
       "head": "Oliver Kroemer",
       "relation": "coauthorWith",
       "tail": "conf/caise/92",
-      "score": "-0.3082",
-      "is_novel": true
+      "score": -0.3082,
+      "status": "Structural Match"
     },
     {
       "head": "venue/journal/air",
       "relation": "type",
       "tail": "Rosinta Ria Panggabean",
-      "score": "-0.0827",
-      "is_novel": true
+      "score": -0.0827,
+      "status": "Verified"
     },
     {
       "head": "Franois P. Hamon",
       "relation": "coauthorWith",
       "tail": "Tao Luo 0009",
-      "score": "-0.1596",
-      "is_novel": true
+      "score": -0.1596,
+      "status": "Verified"
     },
     {
       "head": "Zhidu Li",
       "relation": "coauthorWith",
       "tail": "Rajaram Tukaram Ugale",
-      "score": "-0.0706",
-      "is_novel": true
+      "score": -0.0706,
+      "status": "Verified"
     },
     {
       "head": "Haifeng Xing",
       "relation": "coauthorWith",
       "tail": "Pekka Laihanen",
-      "score": "-0.2961",
-      "is_novel": true
+      "score": -0.2961,
+      "status": "Verified"
     },
     {
       "head": "Pedro Carmona-Saez",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.0197",
-      "is_novel": true
+      "score": -0.0197,
+      "status": "Verified"
     },
     {
       "head": "David B. H. Tay",
       "relation": "coauthorWith",
       "tail": "conf/avss/2022",
-      "score": "0.0343",
-      "is_novel": true
+      "score": 0.0343,
+      "status": "Structural Match"
     },
     {
       "head": "Arif Ur Rahman",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.2961",
-      "is_novel": true
+      "score": -0.2961,
+      "status": "Verified"
     },
     {
       "head": "Yuhang Huang",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
+      "score": -0.3098,
+      "status": "Verified"
     },
     {
       "head": "Youji Kohda",
       "relation": "coauthorWith",
       "tail": "S. T. Veena",
-      "score": "-0.3109",
-      "is_novel": true
+      "score": -0.3109,
+      "status": "Verified"
     },
     {
       "head": "Naoki Sawada",
       "relation": "coauthorWith",
       "tail": "S. T. Veena",
-      "score": "-0.3109",
-      "is_novel": true
+      "score": -0.3109,
+      "status": "Verified"
     },
     {
       "head": "Youjun Liu",
       "relation": "coauthorWith",
       "tail": "conf/avss/2022",
-      "score": "0.0335",
-      "is_novel": true
+      "score": 0.0335,
+      "status": "Structural Match"
     },
     {
       "head": "Jiawan Zhang",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
+      "score": -0.3098,
+      "status": "Verified"
     },
     {
       "head": "venue/conf/biostec",
       "relation": "type",
       "tail": "Akhtar Razul Razali",
-      "score": "-0.2493",
-      "is_novel": true
+      "score": -0.2493,
+      "status": "Verified"
     },
     {
       "head": "journals/tkde/SunYSXDCXW24",
       "relation": "publishedInJournal",
       "tail": "1657-1662",
-      "score": "-0.0410",
-      "is_novel": true
+      "score": -0.041,
+      "status": "Verified"
     },
     {
       "head": "Xiyu Liu 0001",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3056",
-      "is_novel": true
+      "score": -0.3056,
+      "status": "Verified"
     },
     {
       "head": "Dong Nhi Truong",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
+      "score": -0.3098,
+      "status": "Verified"
     },
     {
       "head": "Katharine J. Cahill",
       "relation": "coauthorWith",
       "tail": "conf/avss/2022",
-      "score": "-0.3171",
-      "is_novel": true
+      "score": -0.3171,
+      "status": "Structural Match"
     },
     {
       "head": "Kiyoshi Kiyokawa",
       "relation": "coauthorWith",
       "tail": "Carlo Andrenacci",
-      "score": "-0.0240",
-      "is_novel": true
+      "score": -0.024,
+      "status": "Verified"
     },
     {
       "head": "Mario Zagar",
       "relation": "coauthorWith",
       "tail": "Pekka Laihanen",
-      "score": "-0.0522",
-      "is_novel": true
+      "score": -0.0522,
+      "status": "Verified"
     },
     {
       "head": "Tanya Barrett",
       "relation": "coauthorWith",
       "tail": "conf/avss/2022",
-      "score": "-0.3171",
-      "is_novel": true
+      "score": -0.3171,
+      "status": "Structural Match"
     },
     {
       "head": "conf/ofc/SuzukiOMYHSSKNKUOMCFMM24",
       "relation": "hasAuthor",
       "tail": "Steven R. Hursh",
-      "score": "-0.0702",
-      "is_novel": true
+      "score": -0.0702,
+      "status": "Verified"
     },
     {
       "head": "Rosilah Hassan",
       "relation": "coauthorWith",
       "tail": "conf/caise/92",
-      "score": "0.0321",
-      "is_novel": true
+      "score": 0.0321,
+      "status": "Structural Match"
     },
     {
       "head": "Melquades Prez Prez",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.0325",
-      "is_novel": true
+      "score": -0.0325,
+      "status": "Verified"
     },
     {
       "head": "Hung Tran",
       "relation": "coauthorWith",
       "tail": "Pekka Laihanen",
-      "score": "-0.0097",
-      "is_novel": true
+      "score": -0.0097,
+      "status": "Verified"
     },
     {
       "head": "Ashwin Lahorkar",
       "relation": "coauthorWith",
       "tail": "conf/avss/2022",
-      "score": "-0.2815",
-      "is_novel": true
+      "score": -0.2815,
+      "status": "Structural Match"
     },
     {
       "head": "Jinhui Fang",
       "relation": "coauthorWith",
       "tail": "conf/caise/92",
-      "score": "0.0316",
-      "is_novel": true
+      "score": 0.0316,
+      "status": "Structural Match"
     },
     {
       "head": "Zhilin Liu",
       "relation": "coauthorWith",
       "tail": "Tony Blakely",
-      "score": "-0.2918",
-      "is_novel": true
+      "score": -0.2918,
+      "status": "Verified"
     },
     {
       "head": "Shuliang Bai",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.0115",
-      "is_novel": true
+      "score": -0.0115,
+      "status": "Verified"
     },
     {
       "head": "Ruolan Wu",
       "relation": "coauthorWith",
       "tail": "conf/avss/2022",
-      "score": "0.0335",
-      "is_novel": true
+      "score": 0.0335,
+      "status": "Structural Match"
     },
     {
       "head": "conf/icmla/AlnemerACDBIK11",
       "relation": "hasAuthor",
       "tail": "Steven R. Hursh",
-      "score": "-0.2195",
-      "is_novel": true
+      "score": -0.2195,
+      "status": "Verified"
     },
     {
       "head": "Emma Dauterman",
       "relation": "coauthorWith",
       "tail": "Tony Blakely",
-      "score": "-0.0569",
-      "is_novel": true
+      "score": -0.0569,
+      "status": "Verified"
     },
     {
       "head": "Xun Chen 0002",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
+      "score": -0.3098,
+      "status": "Verified"
     },
     {
       "head": "Remus Pusca",
       "relation": "coauthorWith",
       "tail": "Pekka Laihanen",
-      "score": "-0.0438",
-      "is_novel": true
+      "score": -0.0438,
+      "status": "Verified"
     },
     {
       "head": "Michael L. Wick",
       "relation": "coauthorWith",
       "tail": "conf/mie/AhamedWBJSMBRPF21",
-      "score": "-0.2639",
-      "is_novel": true
+      "score": -0.2639,
+      "status": "Structural Match"
     },
     {
       "head": "Zhengling He",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
+      "score": -0.3098,
+      "status": "Verified"
     },
     {
       "head": "Shuang Gao",
       "relation": "coauthorWith",
       "tail": "S. T. Veena",
-      "score": "0.0216",
-      "is_novel": true
+      "score": 0.0216,
+      "status": "Verified"
     },
     {
       "head": "Eleftherios D. Polychronopoulos",
       "relation": "coauthorWith",
       "tail": "conf/gvd/1995",
-      "score": "-0.3164",
-      "is_novel": true
+      "score": -0.3164,
+      "status": "Structural Match"
     },
     {
       "head": "Elizaveta Semenova",
       "relation": "coauthorWith",
       "tail": "Tony Blakely",
-      "score": "-0.0575",
-      "is_novel": true
+      "score": -0.0575,
+      "status": "Verified"
     },
     {
       "head": "Matjaz Debevc",
       "relation": "coauthorWith",
       "tail": "conf/caise/92",
-      "score": "-0.3148",
-      "is_novel": true
+      "score": -0.3148,
+      "status": "Structural Match"
     },
     {
       "head": "venue/journal/nca",
       "relation": "type",
       "tail": "Rosinta Ria Panggabean",
-      "score": "-0.0827",
-      "is_novel": true
+      "score": -0.0827,
+      "status": "Verified"
     },
     {
       "head": "Gerard Lassche",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.0325",
-      "is_novel": true
+      "score": -0.0325,
+      "status": "Verified"
     },
     {
       "head": "Rui Zhang 0003",
       "relation": "homonymID",
       "tail": "Santhiya Subramanian",
-      "score": "-0.0247",
-      "is_novel": true
+      "score": -0.0247,
+      "status": "Structural Match"
     },
     {
       "head": "Abhishek Venkatesh Jnanashree",
       "relation": "coauthorWith",
       "tail": "Rajaram Tukaram Ugale",
-      "score": "-0.2590",
-      "is_novel": true
+      "score": -0.259,
+      "status": "Verified"
     },
     {
       "head": "Yubao Guan",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
+      "score": -0.3098,
+      "status": "Verified"
     },
     {
       "head": "Mingfeng Zhao",
       "relation": "coauthorWith",
       "tail": "S. T. Veena",
-      "score": "0.0252",
-      "is_novel": true
+      "score": 0.0252,
+      "status": "Verified"
     },
     {
       "head": "Danielle Albers Szafir",
       "relation": "coauthorWith",
       "tail": "conf/gvd/1995",
-      "score": "-0.3104",
-      "is_novel": true
+      "score": -0.3104,
+      "status": "Structural Match"
     },
     {
       "head": "Chad Atalla",
       "relation": "coauthorWith",
       "tail": "Pekka Laihanen",
-      "score": "-0.0349",
-      "is_novel": true
+      "score": -0.0349,
+      "status": "Verified"
     },
     {
       "head": "Serge J. Belongie",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.0747",
-      "is_novel": true
+      "score": -0.0747,
+      "status": "Verified"
     },
     {
       "head": "Marwan Hadri Azmi",
       "relation": "coauthorWith",
       "tail": "conf/icse/2014mise",
-      "score": "0.0274",
-      "is_novel": true
+      "score": 0.0274,
+      "status": "Structural Match"
     },
     {
       "head": "Feng Liu",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
+      "score": -0.3098,
+      "status": "Verified"
     },
     {
       "head": "Michal Uricr",
       "relation": "coauthorWith",
       "tail": "S. T. Veena",
-      "score": "-0.3109",
-      "is_novel": true
+      "score": -0.3109,
+      "status": "Verified"
     },
     {
       "head": "Masatoshi Ishikawa",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.0325",
-      "is_novel": true
+      "score": -0.0325,
+      "status": "Verified"
     },
     {
       "head": "Jos Adn Hernndez-Nolasco",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.0325",
-      "is_novel": true
+      "score": -0.0325,
+      "status": "Verified"
     },
     {
       "head": "Jayme Luiz Szwarcfiter",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.0325",
-      "is_novel": true
+      "score": -0.0325,
+      "status": "Verified"
     },
     {
       "head": "Tingsong Lu",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.2981",
-      "is_novel": true
+      "score": -0.2981,
+      "status": "Verified"
     },
     {
       "head": "Miao Jiang 0001",
       "relation": "coauthorWith",
       "tail": "conf/gvd/1995",
-      "score": "0.0334",
-      "is_novel": true
+      "score": 0.0334,
+      "status": "Structural Match"
     },
     {
       "head": "Srgio Fabres",
       "relation": "coauthorWith",
       "tail": "Carlo Andrenacci",
-      "score": "-0.0094",
-      "is_novel": true
+      "score": -0.0094,
+      "status": "Verified"
     },
     {
       "head": "Tianming Liu 0001",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3092",
-      "is_novel": true
+      "score": -0.3092,
+      "status": "Verified"
     },
     {
       "head": "Frank Y. Chang",
       "relation": "coauthorWith",
       "tail": "Carlo Andrenacci",
-      "score": "-0.0083",
-      "is_novel": true
+      "score": -0.0083,
+      "status": "Verified"
     },
     {
       "head": "Yanru Zeng",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.2954",
-      "is_novel": true
+      "score": -0.2954,
+      "status": "Verified"
     },
     {
       "head": "venue/journal/comgeo",
       "relation": "type",
       "tail": "Rosinta Ria Panggabean",
-      "score": "-0.0827",
-      "is_novel": true
+      "score": -0.0827,
+      "status": "Verified"
     },
     {
       "head": "Wei Gong 0003",
       "relation": "coauthorWith",
       "tail": "conf/caise/92",
-      "score": "0.0394",
-      "is_novel": true
+      "score": 0.0394,
+      "status": "Structural Match"
     },
     {
       "head": "Gholamali Aminian",
       "relation": "coauthorWith",
       "tail": "conf/avss/2022",
-      "score": "-0.2697",
-      "is_novel": true
+      "score": -0.2697,
+      "status": "Structural Match"
     },
     {
       "head": "Bernhard Mlecnik",
       "relation": "coauthorWith",
       "tail": "S. S. Shylaja",
-      "score": "-0.0875",
-      "is_novel": true
+      "score": -0.0875,
+      "status": "Verified"
     },
     {
       "head": "Pawel Drozdowski",
       "relation": "coauthorWith",
       "tail": "S. T. Veena",
-      "score": "-0.3109",
-      "is_novel": true
+      "score": -0.3109,
+      "status": "Verified"
     },
     {
       "head": "Qin Liu 0001",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
+      "score": -0.3098,
+      "status": "Verified"
     },
     {
       "head": "Ying-Chang Liang",
       "relation": "coauthorWith",
       "tail": "Tony Blakely",
-      "score": "-0.2939",
-      "is_novel": true
+      "score": -0.2939,
+      "status": "Verified"
     },
     {
       "head": "Trisha N. Davis",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.2091",
-      "is_novel": true
+      "score": -0.2091,
+      "status": "Verified"
     },
     {
       "head": "Raul Castro Fernandez",
       "relation": "coauthorWith",
       "tail": "Norah E. Dunbar",
-      "score": "-0.0969",
-      "is_novel": true
+      "score": -0.0969,
+      "status": "Verified"
     },
     {
       "head": "Shuchi Chawla 0001",
       "relation": "homonymID",
       "tail": "Santhiya Subramanian",
-      "score": "-0.2850",
-      "is_novel": true
+      "score": -0.285,
+      "status": "Structural Match"
     },
     {
       "head": "Shaohan Huang",
       "relation": "coauthorWith",
       "tail": "Arantza Basauri",
-      "score": "-0.1523",
-      "is_novel": true
+      "score": -0.1523,
+      "status": "Verified"
     },
     {
       "head": "Zhongxin Chen",
       "relation": "coauthorWith",
       "tail": "Tony Blakely",
-      "score": "-0.2842",
-      "is_novel": true
+      "score": -0.2842,
+      "status": "Verified"
     },
     {
       "head": "Atlas Haddadi Avval",
       "relation": "coauthorWith",
       "tail": "conf/cvpr/1999",
-      "score": "-0.3031",
-      "is_novel": true
+      "score": -0.3031,
+      "status": "Structural Match"
     },
     {
       "head": "Bing Wang 0006",
       "relation": "coauthorWith",
       "tail": "Jean de Bissy",
-      "score": "-0.3181",
-      "is_novel": true
+      "score": -0.3181,
+      "status": "Verified"
     },
     {
       "head": "Fanyu Meng",
       "relation": "coauthorWith",
       "tail": "S. T. Veena",
-      "score": "0.0216",
-      "is_novel": true
+      "score": 0.0216,
+      "status": "Verified"
     },
     {
       "head": "Joshua H. Tyler",
       "relation": "coauthorWith",
       "tail": "Tony Blakely",
-      "score": "-0.1405",
-      "is_novel": true
+      "score": -0.1405,
+      "status": "Verified"
     },
     {
       "head": "Conghao Wang",
       "relation": "coauthorWith",
       "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
-    },
-    {
-      "head": "Stefan Simm",
-      "relation": "coauthorWith",
-      "tail": "conf/avss/2022",
-      "score": "-0.3171",
-      "is_novel": true
-    },
-    {
-      "head": "Mert Grtrk",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0687",
-      "is_novel": true
-    },
-    {
-      "head": "Hiroshi G. Okuno",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0325",
-      "is_novel": true
-    },
-    {
-      "head": "Wanlan Yang",
-      "relation": "coauthorWith",
-      "tail": "conf/avss/2022",
-      "score": "0.0350",
-      "is_novel": true
-    },
-    {
-      "head": "Fuzhou Niu",
-      "relation": "coauthorWith",
-      "tail": "conf/gvd/1995",
-      "score": "0.0334",
-      "is_novel": true
-    },
-    {
-      "head": "Tiejun Cui",
-      "relation": "coauthorWith",
-      "tail": "Tony Blakely",
-      "score": "-0.2939",
-      "is_novel": true
-    },
-    {
-      "head": "Keqin Li 0001",
-      "relation": "homonymID",
-      "tail": "Santhiya Subramanian",
-      "score": "-0.0247",
-      "is_novel": true
-    },
-    {
-      "head": "Nicholas Jing Yuan",
-      "relation": "coauthorWith",
-      "tail": "S. T. Veena",
-      "score": "0.0216",
-      "is_novel": true
-    },
-    {
-      "head": "Andrea Conti 0001",
-      "relation": "baseName",
-      "tail": "conf/waoa/2015",
-      "score": "-0.3029",
-      "is_novel": true
-    },
-    {
-      "head": "Minxue Pan",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
-    },
-    {
-      "head": "Su Liu",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.3097",
-      "is_novel": true
-    },
-    {
-      "head": "Carla Guilln",
-      "relation": "coauthorWith",
-      "tail": "conf/gvd/1995",
-      "score": "-0.3160",
-      "is_novel": true
-    },
-    {
-      "head": "Martin Ellis",
-      "relation": "coauthorWith",
-      "tail": "conf/vl/2021",
-      "score": "-0.3004",
-      "is_novel": true
-    },
-    {
-      "head": "Tara Capel",
-      "relation": "coauthorWith",
-      "tail": "Carlo Andrenacci",
-      "score": "-0.0187",
-      "is_novel": true
-    },
-    {
-      "head": "Kang Chen",
-      "relation": "coauthorWith",
-      "tail": "conf/cisc/2006",
-      "score": "0.0226",
-      "is_novel": true
-    },
-    {
-      "head": "Kazue Hata",
-      "relation": "coauthorWith",
-      "tail": "Carlo Andrenacci",
-      "score": "-0.0090",
-      "is_novel": true
-    },
-    {
-      "head": "Irene Van Den Broek",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.2891",
-      "is_novel": true
-    },
-    {
-      "head": "Lichen Zhang 0001",
-      "relation": "coauthorWith",
-      "tail": "conf/ascat/2023",
-      "score": "-0.0224",
-      "is_novel": true
-    },
-    {
-      "head": "Li Li 0094",
-      "relation": "coauthorWith",
-      "tail": "224-234",
-      "score": "-0.2918",
-      "is_novel": true
-    },
-    {
-      "head": "Brian Cheung",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0081",
-      "is_novel": true
-    },
-    {
-      "head": "Juerg Leuthold",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0325",
-      "is_novel": true
-    },
-    {
-      "head": "Kesari Mishra",
-      "relation": "coauthorWith",
-      "tail": "S. T. Veena",
-      "score": "-0.2828",
-      "is_novel": true
-    },
-    {
-      "head": "Jing Liu 0050",
-      "relation": "coauthorWith",
-      "tail": "Arantza Basauri",
-      "score": "-0.1540",
-      "is_novel": true
-    },
-    {
-      "head": "Abel N. Kho",
-      "relation": "coauthorWith",
-      "tail": "conf/avss/2022",
-      "score": "-0.3101",
-      "is_novel": true
-    },
-    {
-      "head": "venue/conf/icassp",
-      "relation": "type",
-      "tail": "Rosinta Ria Panggabean",
-      "score": "-0.2613",
-      "is_novel": true
-    },
-    {
-      "head": "venue/journal/symmetry",
-      "relation": "type",
-      "tail": "Rosinta Ria Panggabean",
-      "score": "-0.0827",
-      "is_novel": true
-    },
-    {
-      "head": "venue/journal/symmetry",
-      "relation": "type",
-      "tail": "Benjamin Goislard de Monsabert",
-      "score": "-0.0973",
-      "is_novel": true
-    },
-    {
-      "head": "Kao-Hua Liu",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0325",
-      "is_novel": true
-    },
-    {
-      "head": "Yu Su 0002",
-      "relation": "coauthorWith",
-      "tail": "conf/avss/2022",
-      "score": "0.0304",
-      "is_novel": true
-    },
-    {
-      "head": "Yue Kang",
-      "relation": "coauthorWith",
-      "tail": "Srinivas Shakkottai",
-      "score": "-0.2311",
-      "is_novel": true
-    },
-    {
-      "head": "Cristina Elena Hanganu",
-      "relation": "coauthorWith",
-      "tail": "conf/avss/2022",
-      "score": "-0.3171",
-      "is_novel": true
-    },
-    {
-      "head": "Jyoti Khadake",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0325",
-      "is_novel": true
-    },
-    {
-      "head": "journals/jocn/SuthanaDWBJHTES15",
-      "relation": "hasAuthor",
-      "tail": "Steven R. Hursh",
-      "score": "-0.1008",
-      "is_novel": true
-    },
-    {
-      "head": "journals/corr/abs-2304-09657",
-      "relation": "hasAuthor",
-      "tail": "Steven R. Hursh",
-      "score": "-0.0856",
-      "is_novel": true
-    },
-    {
-      "head": "Caio Csar Mori Carlo",
-      "relation": "coauthorWith",
-      "tail": "Pekka Laihanen",
-      "score": "-0.0292",
-      "is_novel": true
-    },
-    {
-      "head": "Jonathan Graff-Radford",
-      "relation": "coauthorWith",
-      "tail": "conf/avss/2022",
-      "score": "-0.1466",
-      "is_novel": true
-    },
-    {
-      "head": "Weihua Li 0001",
-      "relation": "baseName",
-      "tail": "conf/waoa/2015",
-      "score": "-0.0137",
-      "is_novel": true
-    },
-    {
-      "head": "Anatole Lcuyer",
-      "relation": "coauthorWith",
-      "tail": "conf/vl/2021",
-      "score": "-0.3006",
-      "is_novel": true
-    },
-    {
-      "head": "Jess Andrs-Ferrer",
-      "relation": "coauthorWith",
-      "tail": "conf/paclic/2022",
-      "score": "-0.2754",
-      "is_novel": true
-    },
-    {
-      "head": "Marco Pavone 0001",
-      "relation": "coauthorWith",
-      "tail": "S. T. Veena",
-      "score": "0.0327",
-      "is_novel": true
-    },
-    {
-      "head": "journals/artmed/PengOWYZSLFHH20",
-      "relation": "volume",
-      "tail": "Albertus Joko Santoso",
-      "score": "-0.0725",
-      "is_novel": true
-    },
-    {
-      "head": "venue/conf/iconip",
-      "relation": "type",
-      "tail": "Rosinta Ria Panggabean",
-      "score": "-0.2613",
-      "is_novel": true
-    },
-    {
-      "head": "Gabriel Fischer Abati",
-      "relation": "coauthorWith",
-      "tail": "conf/cisc/2006",
-      "score": "-0.3023",
-      "is_novel": true
-    },
-    {
-      "head": "Christopher R",
-      "relation": "coauthorWith",
-      "tail": "conf/avss/2022",
-      "score": "-0.3166",
-      "is_novel": true
-    },
-    {
-      "head": "Zhigang Zhu",
-      "relation": "coauthorWith",
-      "tail": "conf/avss/2022",
-      "score": "0.0335",
-      "is_novel": true
-    },
-    {
-      "head": "Ivan Kobyzev",
-      "relation": "coauthorWith",
-      "tail": "Silvana Pinheiro",
-      "score": "-0.3002",
-      "is_novel": true
-    },
-    {
-      "head": "Robert T. Schweller",
-      "relation": "coauthorWith",
-      "tail": "conf/mie/AhamedWBJSMBRPF21",
-      "score": "-0.3023",
-      "is_novel": true
-    },
-    {
-      "head": "Jiancheng Lv 0001",
-      "relation": "homonymID",
-      "tail": "Mohammed H. Ibrahim",
-      "score": "-0.0774",
-      "is_novel": true
-    },
-    {
-      "head": "Shih-Chun Lin 0002",
-      "relation": "baseName",
-      "tail": "conf/waoa/2015",
-      "score": "0.0051",
-      "is_novel": true
-    },
-    {
-      "head": "Brian Lynn",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0510",
-      "is_novel": true
-    },
-    {
-      "head": "venue/journal/jaciii",
-      "relation": "type",
-      "tail": "Poernomo Gunawan",
-      "score": "-0.0674",
-      "is_novel": true
-    },
-    {
-      "head": "Juan Mateu",
-      "relation": "coauthorWith",
-      "tail": "S. T. Veena",
-      "score": "-0.3056",
-      "is_novel": true
-    },
-    {
-      "head": "Ruyi Feng",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
-    },
-    {
-      "head": "Zexuan Ji",
-      "relation": "coauthorWith",
-      "tail": "S. T. Veena",
-      "score": "0.0216",
-      "is_novel": true
-    },
-    {
-      "head": "Shuang Liang 0007",
-      "relation": "baseName",
-      "tail": "conf/waoa/2015",
-      "score": "-0.0136",
-      "is_novel": true
-    },
-    {
-      "head": "Alfred Kobsa",
-      "relation": "coauthorWith",
-      "tail": "Brejesh Lall",
-      "score": "-0.0927",
-      "is_novel": true
-    },
-    {
-      "head": "venue/journal/tbe",
-      "relation": "type",
-      "tail": "Rosinta Ria Panggabean",
-      "score": "-0.0827",
-      "is_novel": true
-    },
-    {
-      "head": "Zhitao Xiao",
-      "relation": "coauthorWith",
-      "tail": "S. T. Veena",
-      "score": "0.0216",
-      "is_novel": true
-    },
-    {
-      "head": "Carolina Fernandes",
-      "relation": "coauthorWith",
-      "tail": "conf/vl/2021",
-      "score": "-0.0763",
-      "is_novel": true
-    },
-    {
-      "head": "venue/conf/acl",
-      "relation": "type",
-      "tail": "Rosinta Ria Panggabean",
-      "score": "-0.2612",
-      "is_novel": true
-    },
-    {
-      "head": "Zhonglong Zheng",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.3085",
-      "is_novel": true
-    },
-    {
-      "head": "Axel Jantsch",
-      "relation": "coauthorWith",
-      "tail": "Anton Kruger",
-      "score": "-0.1562",
-      "is_novel": true
-    },
-    {
-      "head": "Daniel McDuff",
-      "relation": "coauthorWith",
-      "tail": "conf/ascat/2023",
-      "score": "-0.2811",
-      "is_novel": true
-    },
-    {
-      "head": "Francesco Guzzi",
-      "relation": "coauthorWith",
-      "tail": "conf/gvd/1995",
-      "score": "-0.3171",
-      "is_novel": true
-    },
-    {
-      "head": "Dirk-Bart den Ouden",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0528",
-      "is_novel": true
-    },
-    {
-      "head": "Ann-Christin Klnker",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0419",
-      "is_novel": true
-    },
-    {
-      "head": "Kaili Zhang",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
-    },
-    {
-      "head": "Nate C. Apathy",
-      "relation": "coauthorWith",
-      "tail": "conf/avss/2022",
-      "score": "-0.3169",
-      "is_novel": true
-    },
-    {
-      "head": "venue/journal/ijflis",
-      "relation": "type",
-      "tail": "Rosinta Ria Panggabean",
-      "score": "-0.0827",
-      "is_novel": true
-    },
-    {
-      "head": "Julien Milles",
-      "relation": "coauthorWith",
-      "tail": "Mostafa Ghorbandoost",
-      "score": "-0.1181",
-      "is_novel": true
-    },
-    {
-      "head": "Jie Yang",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.3092",
-      "is_novel": true
-    },
-    {
-      "head": "Rui Zhang",
-      "relation": "coauthorWith",
-      "tail": "Pekka Laihanen",
-      "score": "-0.2941",
-      "is_novel": true
-    },
-    {
-      "head": "Ivan Scagnetto",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0323",
-      "is_novel": true
-    },
-    {
-      "head": "Jiang Liu 0001",
-      "relation": "homonymID",
-      "tail": "Santhiya Subramanian",
-      "score": "-0.0222",
-      "is_novel": true
-    },
-    {
-      "head": "Fei Wu",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.3065",
-      "is_novel": true
-    },
-    {
-      "head": "Michael Hubner",
-      "relation": "coauthorWith",
-      "tail": "conf/caise/92",
-      "score": "-0.3064",
-      "is_novel": true
-    },
-    {
-      "head": "Timothy Kam",
-      "relation": "coauthorWith",
-      "tail": "S. T. Veena",
-      "score": "-0.3109",
-      "is_novel": true
-    },
-    {
-      "head": "Mohammad Bataineh 0001",
-      "relation": "coauthorWith",
-      "tail": "Lyndsay Shand",
-      "score": "-0.2547",
-      "is_novel": true
-    },
-    {
-      "head": "Houcheng Jiang",
-      "relation": "coauthorWith",
-      "tail": "Tony Blakely",
-      "score": "-0.2939",
-      "is_novel": true
-    },
-    {
-      "head": "venue/conf/www",
-      "relation": "type",
-      "tail": "Cline Morin",
-      "score": "-0.2597",
-      "is_novel": true
-    },
-    {
-      "head": "venue/journal/tac",
-      "relation": "type",
-      "tail": "Rosinta Ria Panggabean",
-      "score": "-0.0814",
-      "is_novel": true
-    },
-    {
-      "head": "venue/journal/tjs",
-      "relation": "type",
-      "tail": "Rosinta Ria Panggabean",
-      "score": "-0.0827",
-      "is_novel": true
-    },
-    {
-      "head": "Hermenegild Arevalo",
-      "relation": "coauthorWith",
-      "tail": "Rajaram Tukaram Ugale",
-      "score": "-0.2590",
-      "is_novel": true
-    },
-    {
-      "head": "Cheng Zhen",
-      "relation": "coauthorWith",
-      "tail": "Tony Blakely",
-      "score": "-0.2939",
-      "is_novel": true
-    },
-    {
-      "head": "Luca Soldaini",
-      "relation": "coauthorWith",
-      "tail": "conf/gvd/1995",
-      "score": "-0.3169",
-      "is_novel": true
-    },
-    {
-      "head": "venue/journal/fcomp",
-      "relation": "type",
-      "tail": "Rosinta Ria Panggabean",
-      "score": "-0.0827",
-      "is_novel": true
-    },
-    {
-      "head": "Gang Dong",
-      "relation": "coauthorWith",
-      "tail": "S. T. Veena",
-      "score": "0.0216",
-      "is_novel": true
-    },
-    {
-      "head": "Steve Fischer",
-      "relation": "coauthorWith",
-      "tail": "conf/avss/2022",
-      "score": "-0.3171",
-      "is_novel": true
-    },
-    {
-      "head": "Qimeng Wang",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
-    },
-    {
-      "head": "conf/pods/FukudaMMT96",
-      "relation": "lastModified",
-      "tail": "conf/mmns/2009",
-      "score": "-0.1476",
-      "is_novel": true
-    },
-    {
-      "head": "Marco Nolden",
-      "relation": "coauthorWith",
-      "tail": "Silvana Pinheiro",
-      "score": "-0.0119",
-      "is_novel": true
-    },
-    {
-      "head": "Qizhi Qiu",
-      "relation": "coauthorWith",
-      "tail": "Tony Blakely",
-      "score": "-0.2939",
-      "is_novel": true
-    },
-    {
-      "head": "Zhihui Zhu",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.3098",
-      "is_novel": true
-    },
-    {
-      "head": "Julia A. Schnabel",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0306",
-      "is_novel": true
-    },
-    {
-      "head": "Vianney Boeuf",
-      "relation": "coauthorWith",
-      "tail": "Arantza Basauri",
-      "score": "-0.1807",
-      "is_novel": true
-    },
-    {
-      "head": "Allison Druin",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.0322",
-      "is_novel": true
-    },
-    {
-      "head": "Kun Wang",
-      "relation": "coauthorWith",
-      "tail": "conf/mie/AhamedWBJSMBRPF21",
-      "score": "0.0094",
-      "is_novel": true
-    },
-    {
-      "head": "Mohammed A. Awadallah 0001",
-      "relation": "coauthorWith",
-      "tail": "Guy O. Billings",
-      "score": "-0.3063",
-      "is_novel": true
-    },
-    {
-      "head": "venue/conf/bir",
-      "relation": "type",
-      "tail": "Rosinta Ria Panggabean",
-      "score": "-0.2613",
-      "is_novel": true
-    },
-    {
-      "head": "Lorenzo Giusti",
-      "relation": "coauthorWith",
-      "tail": "Pekka Laihanen",
-      "score": "-0.0319",
-      "is_novel": true
+      "score": -0.3098,
+      "status": "Verified"
     }
   ]
 }
