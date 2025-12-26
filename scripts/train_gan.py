@@ -13,7 +13,7 @@ EMBEDDING_DIM = 256
 BATCH_SIZE = 8192
 HIDDEN_DIM = 512
 MAX_EPOCHS = 1000
-EPOCHS_PER_RUN = 20
+EPOCHS_PER_RUN = 10
 LR = 0.0001
 CLIP_VALUE = 0.01 
 N_CRITIC = 5         
@@ -194,7 +194,7 @@ def train():
         print(f"[WARN] Could not create novelty set (RAM issue?): {e}")
         print("[WARN] Proceeding without novelty check.")
     
-    num_generate = 5000
+    num_generate = 1000
     generated_lines = []
     
     with torch.no_grad():

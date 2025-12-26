@@ -120,35 +120,45 @@ h2 {
 
 
 .table-wrapper {
-  max-height: 600px;
-  overflow-y: auto;
   border: 1px solid var(--border);
+  width: 100%;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 th {
   text-align: left;
   font-weight: 700;
-  padding: 12px 8px;
+  padding: 12px 16px;
   border-top: 2px solid var(--border);
   border-bottom: 1px solid var(--border);
   font-family: Georgia, "Times New Roman", serif;
+  white-space: nowrap;
 }
 
 td {
   font-family: "Courier New", monospace;
-  padding: 10px 8px;
+  padding: 12px 16px;
   border-bottom: 1px solid #eee;
+  word-break: break-word;
 }
 
-.col-relation { width: 25%; }
-.col-entity { width: 50%; }
-.col-score { width: 15%; }
-.col-type { width: 10%; }
+.col-relation { 
+  width: 28%;
+}
+.col-entity { 
+  width: 45%;
+}
+.col-score { 
+  width: 12%;
+}
+.col-type { 
+  width: 15%;
+}
 
 .table-loading {
   text-align: center;
@@ -192,21 +202,30 @@ td {
 
 .relation-bars {
   display: grid;
-  row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 20px;
+}
+
+.rel-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .rel-label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--text-secondary);
+  font-family: "Courier New", monospace;
 }
 
 .rel-bar {
-  height: 10px;
+  height: 6px;
   background: #eee;
+  border: 1px solid #ddd;
 }
 
 .rel-fill {
-  height: 10px;
+  height: 6px;
   background: var(--accent);
 }
 
