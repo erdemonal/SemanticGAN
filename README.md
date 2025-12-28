@@ -1,11 +1,11 @@
-# Wasserstein GAN for Knowledge Graph Completion with Continuous Learning
+# Wasserstein GAN for Knowledge Graph Completion
 
 [![Sync Results](https://github.com/erdemonal/SemanticGAN/actions/workflows/sync-results.yml/badge.svg)](https://github.com/erdemonal/SemanticGAN/actions/workflows/sync-results.yml)
 [![pages-build-deployment](https://github.com/erdemonal/SemanticGAN/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/erdemonal/SemanticGAN/actions/workflows/pages/pages-build-deployment)
 
 This repository contains a research prototype for Knowledge Graph Completion on the DBLP Computer Science Bibliography.
 
-The system uses a Wasserstein GAN to generate candidate RDF triples from an evolving publication graph. Model training is updated daily using an automated workflow.
+The system uses a Wasserstein GAN to generate candidate RDF triples from an evolving publication graph. Model training is executed periodically using an automated workflow.
 
 ## Technical Report
 
@@ -15,11 +15,10 @@ A detailed description of the model, training procedure, and evaluation is provi
 
 The LaTeX source is available in [`paper/main.tex`](paper/main.tex)
 
-## Training Dashboard
+## Results
 
-Metrics are available at https://erdemonal.github.io/SemanticGAN
-
-The dashboard is used to monitor training progress and inspect generated RDF triples.
+Training outputs and generated RDF triples are available at:
+https://erdemonal.github.io/SemanticGAN
 
 ## Methodology
 
@@ -29,7 +28,7 @@ The preprocessing script `scripts/prepare_dblp_kg.py` reads the XML file increme
 
 The WGAN model consists of a Generator that produces tail entity embeddings from noise and relation embeddings, and a Discriminator that scores triples using a scalar Wasserstein distance. Training uses RMSprop with gradient clipping to enforce the Lipschitz constraint.
 
-The continuous learning pipeline runs via GitHub Actions in `.github/workflows/daily-experiment.yml`. The workflow loads the latest checkpoint, updates the model with new data when available, computes evaluation metrics, and updates the dashboard.
+An automated training workflow is orchestrated via GitHub Actions. Training is executed on external compute infrastructure, and the resulting artifacts are synchronized after each run.
 
 ## Model Storage and Data Decoupling
 
@@ -39,11 +38,11 @@ Model Hub: [erdemonal/SemanticGAN](https://huggingface.co/erdemonal/SemanticGAN)
 
 Dataset Hub: [erdemonal/SemanticGAN-Dataset](https://huggingface.co/erdemonal/SemanticGAN-Dataset) contains the processed DBLP triples and ID mappings.
 
-The continuous learning pipeline automatically fetches data from the Dataset Hub and restores model states from the Model Hub before each training run.
+The automated training workflow fetches processed data from the Dataset Hub and restores model states from the Model Hub before each training run.
 
 ## Repository Structure
 
-Technical report in `paper/`, preprocessing scripts in `scripts/`, model code in `src/`, data in `data/`, checkpoints in `checkpoints/`, dashboard files in `index.html`.
+Technical report in `paper/`, preprocessing scripts in `scripts/`, model code in `src/`, data in `data/`, checkpoints in `checkpoints/`.
 
 ## Data Availability
 
