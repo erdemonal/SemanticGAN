@@ -11,7 +11,7 @@ The system uses a Wasserstein GAN to generate candidate RDF triples from an evol
 
 A detailed description of the model, training procedure, and evaluation is provided in the technical report:
 
-[`paper/WGAN_Knowledge_Graph_Completion.pdf`](paper/WGAN_Knowledge_Graph_Completion.pdf)
+[`paper/WGAN_Knowledge_Graph_Completion.pdf`](paper/knowledge-graph-completion-wasserstein-gan.pdf)
 
 The LaTeX source is available in [`paper/main.tex`](paper/main.tex)
 

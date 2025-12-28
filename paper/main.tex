@@ -12,7 +12,7 @@
 \usepackage{microtype}
 \usepackage{booktabs}
 
-\title{Wasserstein GAN for Knowledge Graph Completion with Continuous Learning}
+\title{Knowledge Graph Completion and RDF Triple Generation with a Wasserstein GAN}
 
 \author{
     \IEEEauthorblockN{Erdem Önal \orcidlink{0009-0006-6580-3711}}
@@ -23,89 +23,181 @@
 \maketitle
 
 \begin{abstract}
-Knowledge Graph Completion addresses the problem of missing relations in structured knowledge bases. Adversarial models can generate informative negative samples, but many approaches suffer from unstable optimization when applied to discrete graph data. Most existing models also assume static datasets and do not adapt as new information becomes available. This work presents a Wasserstein based adversarial model for Knowledge Graph Completion. The method is evaluated on the DBLP Computer Science Bibliography and generates valid RDF triples. The use of the Wasserstein distance leads to stable training behavior. The model is updated daily through an automated pipeline. Experiments conducted on a dataset containing over 3.9 million entities show that the generated triples are largely novel and free of duplication.
+Knowledge Graph Completion concerns the inference of missing relations in structured knowledge bases.
+Adversarial training can support this task by producing informative negative samples, but its application to discrete graph data is often unstable.
+In addition, bibliographic knowledge graphs are sufficiently large to exceed the limits of a single training session.
+This work presents an adversarial system trained with a Wasserstein objective on the DBLP Computer Science Bibliography.
+The dataset contains approximately 106 million RDF triples.
+Training is performed incrementally by preserving model parameters and optimizer state across sessions.
+The resulting model reaches a stable optimization regime and generates RDF triples that largely respect schema constraints.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Knowledge Graph Completion, Wasserstein GAN, Continuous Learning, RDF
+Knowledge Graph Completion, Wasserstein GAN, RDF, Incremental Training
 \end{IEEEkeywords}
 
 \section{Introduction}
-Knowledge graphs represent facts as triples composed of a head entity, a relation, and a tail entity. Large graphs such as the DBLP Computer Science Bibliography are inherently incomplete. Missing authorship, venue, or publication relations reduce their analytical value.
+Knowledge graphs represent information as triples consisting of a head entity, a relation, and a tail entity.
+Large bibliographic graphs such as the DBLP Computer Science Bibliography are inherently incomplete.
+Missing authorship, venue, and publication relations limit their usefulness for analysis and inference.
 
-Knowledge Graph Completion aims to infer these missing facts by learning from existing structure. A common challenge in this task is the construction of effective negative samples. Uniform random sampling often produces trivial negatives that provide little learning signal. Prior work has shown that adversarial sampling can improve this process by generating more informative candidates.
+A central difficulty in Knowledge Graph Completion lies in the construction of effective negative samples.
+Uniformly generated negatives are often trivial and provide limited learning signal.
+Adversarial training addresses this issue by generating challenging candidates that encourage the scoring model to learn finer structural distinctions.
+However, adversarial optimization over discrete entities is sensitive to gradient instability.
+The Wasserstein objective mitigates this issue by replacing probability divergence with the Earth Mover distance, leading to smoother gradients and more stable training.
 
-Applying adversarial learning to discrete graph data poses optimization challenges. Gradient information can degrade during training, which may lead to unstable convergence. Wasserstein based objectives alleviate this issue by maintaining smoother gradient behavior throughout the optimization process.
-
-Knowledge graphs also evolve as new data becomes available. Static embedding models are not well suited to reflect such changes. This work studies a system that combines adversarial learning with periodic model updates in order to handle evolving graph content.
+Beyond optimization, scale introduces a practical challenge.
+Knowledge graphs containing millions of entities and tens of millions of triples exceed the time and memory limits of typical compute sessions.
+Rather than relying on distributed infrastructure, this work adopts an incremental training strategy.
+Model parameters and optimizer state are preserved between sessions, allowing training to progress gradually over the full dataset.
 
 \section{Related Work}
-Early adversarial approaches such as KBGAN demonstrated that generated negative samples can improve link prediction performance. These methods rely on policy gradient techniques to handle discrete sampling. Such techniques often increase variance and slow down convergence.
+Adversarial learning has been applied to knowledge graph embeddings to improve link prediction and negative sampling.
+Early approaches relied on policy gradient methods to handle discrete sampling, often resulting in high variance and slow convergence.
 
-Wasserstein based adversarial models were later introduced to improve optimization stability. By replacing divergence based objectives with the Wasserstein distance, these models reduce gradient saturation effects. Previous studies applied this idea to knowledge graph embeddings in static settings.
+The introduction of Wasserstein GANs improved adversarial stability by enforcing Lipschitz continuity on the discriminator.
+These methods exhibit smoother optimization behavior and reduced mode collapse.
+Their application to large scale bibliographic knowledge graphs remains relatively unexplored.
 
-Continual learning for knowledge graphs has received comparatively less attention. Existing studies highlight the limitations of models trained on fixed snapshots. They argue for mechanisms that allow incremental updates as new entities and relations appear. The system described in this work follows this direction by retraining the model on a regular schedule.
+Most large scale knowledge graph training pipelines rely on distributed systems or aggressive graph partitioning.
+Incremental training approaches that preserve optimizer state across sessions receive less attention, despite being well suited to constrained computational environments.
 
 \section{Methodology}
 
 \subsection{Data Processing}
-The DBLP Computer Science Bibliography serves as the data source. The raw XML dump contains several million records and cannot be loaded into memory directly. A streaming parser is therefore used to process the data sequentially. After filtering incomplete and low quality entries, over 3.9 million publications are retained. These records are transformed into RDF triples representing authorship, publication venues, and temporal information.
+The DBLP Computer Science Bibliography is used as the data source.
+Due to the size of the XML dump, records are processed sequentially using a streaming parser.
+The resulting graph contains approximately 1.9 million entities and 106 million RDF triples.
+Relations encode authorship, publication venues, and temporal information.
+All entities are mapped to integer identifiers to support efficient embedding lookup.
 
-\subsection{WGAN Architecture}
-The model follows the Wasserstein GAN formulation applied to knowledge graph triples. The generator receives random noise together with a relation embedding and produces a candidate tail representation. The discriminator assigns a scalar score to each triple and estimates its consistency with the data distribution. Training minimizes the Wasserstein distance between real and generated samples under a Lipschitz constraint on the discriminator.
+\subsection{Adversarial Architecture}
+The model follows the standard Wasserstein GAN formulation adapted to knowledge graph triples.
+The generator receives a noise vector together with a relation embedding and produces a candidate entity embedding.
+The discriminator assigns a scalar score to each triple, reflecting its compatibility with the observed data distribution.
 
 \begin{equation}
-\min_G \max_{D \in \mathcal{P}} \mathbb{E}_{x \sim \mathbb{P}_r} [D(x)] - \mathbb{E}_{\tilde{x} \sim \mathbb{P}_g} [D(\tilde{x})]
+\min_G \max_{D \in \mathcal{P}}
+\mathbb{E}_{x \sim \mathbb{P}_r}[D(x)]
+-
+\mathbb{E}_{\tilde{x} \sim \mathbb{P}_g}[D(\tilde{x})]
 \end{equation}
 
-Here $\mathcal{P}$ denotes the set of one Lipschitz functions and $\mathbb{P}_g$ is the distribution induced by the generator.
+The set $\mathcal{P}$ denotes the space of 1 Lipschitz functions, enforced through weight clipping.
+The generator distribution $\mathbb{P}_g$ is defined implicitly by the generated embeddings.
 
-\subsection{Continuous Learning Pipeline}
-Model updates are performed once per day using an automated workflow built on GitHub Actions. Each update resumes training from the most recent checkpoint and incorporates new DBLP records when available. Model parameters and embedding matrices are versioned using Git Large File Storage. This incremental strategy limits the computational overhead associated with repeated full retraining as the knowledge graph expands.
+\subsection{Incremental Training}
+Training proceeds through a sequence of sessions.
+At the beginning of each session, model parameters and optimizer state are restored from persistent storage.
+Optimization then continues on the next segment of the dataset.
+This procedure allows convergence to be achieved without requiring uninterrupted compute availability.
+Progress is observed across sessions rather than within a single execution.
 
 \section{Experiments and Results}
 
-\subsection{Evaluation Metrics}
-Generated triples are evaluated using several complementary criteria. Novelty indicates whether a generated triple is absent from the training set. Uniqueness reflects how often identical triples are produced during generation. Training overlap measures the fraction of generated triples that exactly match known facts. Relation coverage reflects the usage of schema relations. Average distance represents the mean discriminator score assigned to generated triples.
+\subsection{Evaluation Criteria}
+Generated triples are evaluated using structural criteria.
+Novelty measures whether a generated triple is absent from the training data.
+Uniqueness reflects sample diversity.
+Schema validity evaluates compliance with domain and range constraints.
+Training overlap estimates memorization of existing triples.
+The discriminator score serves as an indicator of training stability.
 
 \subsection{Quantitative Results}
-Training exhibits stable convergence behavior across runs as illustrated in Figure \ref{fig:loss}. In the final experiment, one thousand triples were generated. The results are summarized in Table \ref{tab:results}.
+After incremental training on the full dataset, the model produces triples that largely conform to schema constraints.
+Table~\ref{tab:results} summarizes the observed metrics.
+Most generated triples are novel and distinct from the training data.
+Schema violations occur infrequently.
 
 \begin{table}[htbp]
-\caption{Performance Metrics}
+\caption{Final Performance Metrics}
 \label{tab:results}
-\begin{center}
+\centering
 \begin{tabular}{lr}
 \toprule
 Metric & Value \\
 \midrule
 Novelty & 100.0\% \\
 Uniqueness & 100.0\% \\
+Schema Validity & 99.1\% \\
 Training Overlap & 0.0\% \\
-Relation Coverage & 100.0\% \\
-Average Distance & 0.5133 \\
+Average Discriminator Score & -0.1434 \\
 \bottomrule
 \end{tabular}
-\end{center}
+\end{table}
+
+\subsection{Qualitative Inspection}
+A subset of generated triples was manually inspected.
+Representative examples are shown in Table~\ref{tab:samples}.
+The model frequently generates plausible coauthorship relations between authors with similar collaboration patterns.
+Relations associated with name disambiguation also appear as a consequence of structural regularities.
+
+\begin{table}[htbp]
+\caption{Sample Generated RDF Triples}
+\label{tab:samples}
+\centering
+\begin{tabular}{lllc}
+\toprule
+Subject & Predicate & Object & Status \\
+\midrule
+Guozhang Jiang & dblp:coauthorWith & Huang Hong & Valid \\
+Fengyu Yang & dblp:coauthorWith & Karamjit S. Gill & Valid \\
+Xiaoming Fu & dblp:coauthorWith & Anh Tran & Valid \\
+Yun Yang 0001 & dblp:homonymID & Cho Lun Hsu & Structural \\
+Hao Lan Zhang & dblp:homonymID & Cho Lun Hsu & Structural \\
+\bottomrule
+\end{tabular}
 \end{table}
 
 \begin{figure}[htbp]
-\centerline{\includegraphics[width=0.48\textwidth]{loss_curve.png}}
-\caption{Training loss convergence during WGAN optimization on the DBLP dataset}
+\centering
+\includegraphics[width=0.48\textwidth]{loss_curve.png}
+\caption{Training loss across incremental sessions. Stabilization indicates convergence of the adversarial objective.}
 \label{fig:loss}
 \end{figure}
 
-\section{Discussion}
-The observed average distance of 0.5133 provides insight into the structure of the learned embedding space. In the Wasserstein setting, a low distance indicates that generated triples lie close to the distribution of observed facts. This suggests that the generator produces candidates that remain consistent with the relational patterns of the graph. At the same time, the high novelty score shows that these candidates are not replicas of training data. Together, these results indicate that the model explores regions of the latent space that correspond to plausible but previously unobserved relations. This behavior supports the use of the model for identifying likely missing links rather than reproducing known ones.
+\section{Discussion and Limitations}
+The system relies solely on structural information derived from graph topology.
+Textual metadata is excluded due to memory constraints at this scale.
+Despite this limitation, the model captures relation specific domain and range patterns.
+
+During early training stages, optimization is sensitive to initialization and batch size.
+In these phases, the generator may temporarily exhibit reduced diversity.
+As training progresses, this effect diminishes as the adversarial objective stabilizes.
+
+The DBLP graph is highly imbalanced with respect to relation types.
+Coauthorship relations dominate the dataset, while other relations occur less frequently.
+This imbalance is reflected in the distribution of generated triples.
+
+Evaluation is performed on sampled subsets of the graph.
+Exhaustive comparison against all 106 million triples is not computationally feasible,
+and results should be interpreted accordingly.
 
 \section{Conclusion}
-This work presents a Wasserstein based adversarial approach to Knowledge Graph Completion with periodic model updates. The use of the Wasserstein distance leads to stable optimization on discrete graph data. Experiments on the DBLP dataset show that the model generates novel and unique triples. The results indicate that incremental retraining is a viable strategy for maintaining knowledge graph models as new data becomes available.
+This work presents an incremental adversarial system for Knowledge Graph Completion trained on the DBLP Computer Science Bibliography.
+By preserving model parameters and optimizer state across sessions, training proceeds over a dataset containing 106 million RDF triples.
+The resulting generator produces novel and largely schema compliant triples using only structural information.
+The approach demonstrates the feasibility of adversarial training on large knowledge graphs under constrained computational resources.
 
 \sloppy
 \begin{thebibliography}{00}
-\bibitem{cai2018kbgan} L. Cai and W. Y. Wang, ``KBGAN adversarial learning for knowledge graph embeddings,'' in Proc. NAACL HLT, 2018.
-\bibitem{dai2020wgan} Y. Dai et al., ``Generative adversarial networks based on Wasserstein distance for knowledge graph embeddings,'' Knowledge Based Systems, 2020.
-\bibitem{daruna2021continual} A. Daruna et al., ``Continual learning of knowledge graph embeddings,'' IEEE Robotics and Automation Letters, 2021.
+
+\bibitem{cai2018kbgan}
+L. Cai and W. Y. Wang,
+``KBGAN Adversarial Learning for Knowledge Graph Embeddings,''
+NAACL HLT, 2018.
+
+\bibitem{dai2020wgan}
+Y. Dai et al.,
+``Wasserstein GANs for Knowledge Graph Embeddings,''
+Knowledge Based Systems, 2020.
+
+\bibitem{arjovsky2017wgan}
+M. Arjovsky, S. Chintala, and L. Bottou,
+``Wasserstein GAN,''
+arXiv:1701.07875, 2017.
+
 \end{thebibliography}
 
 \end{document}
