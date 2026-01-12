@@ -1,13 +1,11 @@
-import sys
-import os
 import torch
 import torch.optim as optim
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import DataLoader
 from pathlib import Path
-import pandas as pd
-import numpy as np
 import gc
 from tqdm import tqdm
+
+from semanticgan import Generator, Discriminator, KnowledgeGraphDataset
 
 EMBEDDING_DIM = 256   
 BATCH_SIZE = 8192
@@ -19,63 +17,22 @@ CLIP_VALUE = 0.01
 N_CRITIC = 5         
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-parent_dir = os.path.dirname(current_dir)
-sys.path.append(parent_dir)
-
-from src.models import Generator, Discriminator
-
 DATA_PATH = Path("data/processed/kg_triples_ids.txt")
 SYNTHETIC_DIR = Path("data/synthetic")
 CHECKPOINT_DIR = Path("checkpoints")
 CHECKPOINT_PATH = CHECKPOINT_DIR / "gan_latest.pth"
 LOG_FILE = Path("data/processed/training_log.csv")
 
-class DBLPDataset(Dataset):
-    def __init__(self, data_path):
-        print(f"[INFO] Loading dataset from {data_path}...")
-        chunks = []
-        try:
-            for chunk in pd.read_csv(data_path, sep='\t', header=None, names=['h', 'r', 't'], dtype=np.int32, chunksize=1000000):
-                chunks.append(chunk)
-            df = pd.concat(chunks, axis=0)
-            
-            self.head = torch.from_numpy(df['h'].values)
-            self.rel = torch.from_numpy(df['r'].values)
-            self.tail = torch.from_numpy(df['t'].values)
-            
-            self.num_entities = max(df['h'].max(), df['t'].max()) + 1
-            self.num_relations = df['r'].max() + 1
-            
-            print(f"[SUCCESS] Dataset loaded.")
-            print(f"[INFO] Triples: {len(df):,}")
-            print(f"[INFO] Entities: {self.num_entities:,}")
-            print(f"[INFO] Relations: {self.num_relations}")
-            print(f"[INFO] Training Device: {device}")
-            
-            del df, chunks
-            gc.collect()
-            
-        except Exception as e:
-            print(f"[ERROR] Loading failed: {e}")
-            raise e
-
-    def __len__(self):
-        return len(self.head)
-
-    def __getitem__(self, idx):
-        return {
-            'head': self.head[idx],
-            'relation': self.rel[idx],
-            'tail': self.tail[idx]
-        }
-
 def train():
     if not DATA_PATH.exists():
         print(f"[ERROR] Data file not found: {DATA_PATH}")
         return
 
-    dataset = DBLPDataset(DATA_PATH)
+    dataset = KnowledgeGraphDataset(
+        triples_path=DATA_PATH,
+        sep='\t',
+        names=['h', 'r', 't']
+    )
     dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=2, pin_memory=True)
 
     print(f"[INFO] Initializing model on {device}...")

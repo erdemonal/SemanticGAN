@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semantic-gan"
+version = "0.1.1"
+description = "A library for Knowledge Graph Completion using Wasserstein GANs"
+authors = [{name = "Erdem Önal"}]
+readme = "README.md"
+requires-python = ">=3.7"
+license = "GPL-3.0"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.24.0",
+    "pandas",
+    "tqdm",
+    "scikit-learn",
+    "plotly",
+    "matplotlib>=3.7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/erdemonal/SemanticGAN"
+Repository = "https://github.com/erdemonal/SemanticGAN"
+
+[tool.setuptools]
+packages = ["semanticgan"]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md"]
