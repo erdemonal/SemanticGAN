@@ -58,9 +58,7 @@ dataloader = DataLoader(dataset, batch_size=1024, shuffle=True)
 
 ## Technical Report: DBLP Case Study
 
-This repository accompanies a technical report entitled
-"Knowledge Graph Completion and RDF Triple Generation with a Wasserstein GAN",
-presenting an experimental study on the DBLP Computer Science Bibliography.
+This repository supports the technical report "Knowledge Graph Completion and RDF Triple Generation with a Wasserstein GAN" and presents experiments on the DBLP Computer Science Bibliography.
 
 ### Technical Report
 
